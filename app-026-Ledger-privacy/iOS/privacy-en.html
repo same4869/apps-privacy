@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdict · Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #F2ECE0;
+            color: #1A1A1A;
+            line-height: 1.75;
+            padding: 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #FFF9EE;
+            border-radius: 16px;
+            padding: 44px 32px;
+            box-shadow: 0 4px 24px rgba(29, 53, 87, 0.08);
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 16px;
+            font-size: 13px;
+        }
+        .lang-switch a {
+            color: #6E5D48;
+            text-decoration: none;
+            padding: 4px 10px;
+            border: 1px solid #D5C9B0;
+            border-radius: 6px;
+        }
+        .lang-switch a:hover {
+            color: #1D3557;
+            border-color: #1D3557;
+        }
+        h1 {
+            font-family: "New York", "Times New Roman", serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: #1D3557;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+        .update-date {
+            font-size: 12px;
+            color: #6E5D48;
+            margin-bottom: 32px;
+            font-family: "SF Mono", Menlo, monospace;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .intro {
+            font-size: 15px;
+            color: #1A1A1A;
+            margin-bottom: 24px;
+            padding: 18px 20px;
+            background: #F2ECE0;
+            border-radius: 10px;
+            border-left: 3px solid #E8B04B;
+        }
+        .highlight {
+            background: rgba(232, 176, 75, 0.12);
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #1D3557;
+            border: 1px solid rgba(232, 176, 75, 0.4);
+        }
+        h2 {
+            font-family: "New York", "Times New Roman", serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1D3557;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 14.5px;
+            color: #1A1A1A;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 22px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        strong {
+            color: #1D3557;
+            font-weight: 600;
+        }
+        .contact {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #D5C9B0;
+            font-size: 13px;
+            color: #6E5D48;
+        }
+        .contact a {
+            color: #1D3557;
+            text-decoration: none;
+            border-bottom: 1px dotted #1D3557;
+        }
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 11px;
+            color: #6E5D48;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="privacy-zh.html">中文</a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p class="update-date">Last updated: 2026-08-01</p>
+
+        <div class="intro">
+            <strong>Verdict</strong> is a local-first, single-purchase iOS app for keeping a decision journal. Privacy is a first principle here, not a bolt-on.
+        </div>
+
+        <div class="highlight">
+            <strong>The short version</strong>: We don't collect anything. No accounts, no servers, no ads, no trackers. Your data stays on your device and — if you turn on iCloud sync — in your own iCloud private database.
+        </div>
+
+        <h2>1. What we collect</h2>
+        <p><strong>Nothing.</strong></p>
+        <p>More specifically:</p>
+        <ul>
+            <li>No user accounts. You never sign up, never sign in.</li>
+            <li>No backend server. There is nothing on our end that stores your data.</li>
+            <li>No third-party analytics SDKs (no Firebase Analytics / Mixpanel / Amplitude / Sentry).</li>
+            <li>No third-party crash-reporting SDKs. If you opt in to Apple's system-level MetricKit, Apple aggregates and anonymizes reports before delivering them to us — we can't identify individual users.</li>
+            <li>No advertising SDKs.</li>
+            <li>No tracking SDKs.</li>
+            <li>We do not read your contacts, calendar, health data, photos, location, or microphone.</li>
+        </ul>
+        <p>Your decision journal — every title, pre-mortem, note, review, and principle — never leaves your device unless you enable iCloud sync or export the data yourself.</p>
+
+        <h2>2. What is stored locally</h2>
+        <p>The following is saved to the app's sandbox in a CoreData database:</p>
+        <ul>
+            <li>Decision titles, pre-mortem text, mental-cost estimates you enter</li>
+            <li>Tags you pick (four preset tags plus any custom tags you create)</li>
+            <li>Review scores, "would repeat" answers, extracted principles</li>
+            <li>Field notes you add during the settlement period</li>
+            <li>App preferences (theme, notifications, onboarding flag, Pro purchase state)</li>
+        </ul>
+
+        <h2>3. iCloud sync</h2>
+        <p>If you enable iCloud sync in the app's Settings, your data is synced across your own devices (iPhone / iPad / Mac) via Apple's official CloudKit private database.</p>
+        <ul>
+            <li><strong>Apple end-to-end encrypts</strong> data in the CloudKit private database.</li>
+            <li>The developer <strong>cannot see, read, or access</strong> your CloudKit data. Apple does not grant us access.</li>
+            <li>If you sign out of iCloud or turn off iCloud sync in the app, no data leaves your device.</li>
+        </ul>
+
+        <h2>4. Exports</h2>
+        <p>You can export your decisions as Markdown, JSON, or a printable "My Principles" PDF booklet (Pro tier).</p>
+        <ul>
+            <li>Exports are generated <strong>locally on your device</strong>.</li>
+            <li>You decide where the exported file goes (AirDrop, Files, another app, email). We aren't part of that transfer.</li>
+        </ul>
+
+        <h2>5. In-app purchase</h2>
+        <p>The Pro tier is a one-time non-consumable purchase, processed via Apple's StoreKit 2.</p>
+        <ul>
+            <li>Apple handles all payment and receipt data.</li>
+            <li>The developer receives from Apple only the fact that a purchase was made (so we can restore it on your other devices).</li>
+            <li>The developer <strong>does not receive</strong> your Apple ID, payment card, or any other personal detail.</li>
+        </ul>
+
+        <h2>6. Future AI features (not shipped yet)</h2>
+        <p>Verdict v1.0 has <strong>no AI features</strong>. If any are added later, they will use one of these two paths:</p>
+        <ul>
+            <li><strong>Apple Intelligence · On-device</strong>: runs locally on your device via Foundation Models. Nothing leaves your device.</li>
+            <li><strong>BYOK (Bring Your Own Key)</strong>: you paste an API key you own (Claude / OpenAI / Gemini) into the app's Settings. When you invoke AI, your data is sent <strong>directly from your device to the API provider you chose</strong>. We do not proxy, log, or store any of this. We do not see your key.</li>
+        </ul>
+        <p>This policy will be updated when those features ship.</p>
+
+        <h2>7. System permissions</h2>
+        <p>The app may request the following permissions:</p>
+        <ul>
+            <li><strong>Local notifications</strong>: to remind you when a decision's settlement date arrives. Notifications are scheduled and delivered locally by iOS — no network involved.</li>
+            <li><strong>Siri / App Intents</strong>: so you can say "record a decision" or "record a moment" through Siri. Apple handles the voice and intent; the developer never receives raw audio or transcripts.</li>
+        </ul>
+
+        <h2>8. Children</h2>
+        <p>The app is rated 4+. We do not knowingly collect data from anyone, of any age. Because the app does not connect to the internet and does not collect data, there is no path by which children's information could be transmitted externally.</p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>If we update this policy, we'll bump the "Last updated" date at the top and describe what changed. Because we don't collect data, future changes will primarily be clarifications — not new data collection.</p>
+
+        <h2>10. Contact</h2>
+        <p>For any question about this Privacy Policy:</p>
+        <ul>
+            <li>Email: <a href="mailto:same4869@163.com">same4869@163.com</a></li>
+        </ul>
+
+        <div class="contact">
+            <p>App name: <strong>Verdict / 决断</strong></p>
+            <p>Developer: xunwang</p>
+            <p>Contact: <a href="mailto:same4869@163.com">same4869@163.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Verdict · Made by xunwang</p>
+    </footer>
+</body>
+</html>
