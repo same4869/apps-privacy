@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Lumen · 隐私政策</title>
-<meta name="description" content="Lumen 是纯本地情绪应用. 我们不收集、不上传、不共享任何数据.">
+<title>Lumen · Privacy Policy · 隐私政策</title>
+<meta name="description" content="Lumen is a fully on-device emotional wellness app. We do not collect, upload, or share any data. Lumen 是纯本地情绪应用. 我们不收集、不上传、不共享任何数据.">
 <style>
 :root {
   color-scheme: dark;
@@ -13,21 +13,23 @@
   --dim:  rgba(255,255,255,0.42);
   --line: rgba(255,255,255,0.08);
   --accent: #e8a6b5;
+  --gold: #f5d47a;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
   background: var(--bg);
   color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
-               "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+               "Hiragino Sans GB", "Microsoft YaHei",
+               "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.85;
   -webkit-font-smoothing: antialiased;
 }
 main {
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 80px 24px 120px;
+  padding: 60px 24px 120px;
 }
 h1 {
   font-size: 22px;
@@ -39,23 +41,54 @@ h1 {
   font-size: 12px;
   letter-spacing: 2.5px;
   color: var(--dim);
+  margin-bottom: 24px;
+}
+.lang-switch {
   margin-bottom: 60px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 8px;
+}
+.lang-switch button {
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  padding: 4px 14px;
+  border: 1px solid rgba(232, 166, 181, 0.3);
+  border-radius: 20px;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+}
+.lang-switch button:hover { border-color: var(--accent); }
+.lang-switch button.current {
+  border-color: var(--accent);
+  background: rgba(232, 166, 181, 0.08);
+  color: white;
 }
 h2 {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   color: var(--fg);
   margin: 48px 0 16px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
+}
+h3 {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: var(--fg);
+  margin: 24px 0 10px;
 }
 p {
   font-size: 14px;
   font-weight: 300;
   color: var(--fg);
   margin-bottom: 14px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 p.dim {
   color: var(--dim);
@@ -90,6 +123,13 @@ a {
   padding-bottom: 1px;
 }
 a:hover { border-bottom-color: var(--accent); }
+.callout {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border-left: 2px solid rgba(232, 166, 181, 0.4);
+  background: rgba(232, 166, 181, 0.03);
+}
+.callout strong { color: var(--accent); }
 .crisis {
   margin-top: 60px;
   padding: 24px;
@@ -97,6 +137,26 @@ a:hover { border-bottom-color: var(--accent); }
   background: rgba(232, 166, 181, 0.03);
 }
 .crisis strong { color: var(--accent); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 13px;
+}
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  font-weight: 300;
+  color: var(--fg);
+}
+th {
+  color: var(--dim);
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
 footer {
   margin-top: 80px;
   padding-top: 24px;
@@ -105,56 +165,187 @@ footer {
   color: var(--dim);
   letter-spacing: 1.5px;
 }
+code {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  background: rgba(255,255,255,0.05);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--gold);
+}
+/* 语言切换: 默认显示中文, [data-lang=en] 时切显英文 */
+[data-lang=zh] [lang=en] { display: none; }
+[data-lang=en] [lang=zh] { display: none; }
 </style>
 </head>
-<body>
+<body data-lang="zh">
 <main>
 
 <h1>Lumen</h1>
-<div class="tagline">隐私政策 · Privacy Policy</div>
+<div class="tagline">
+  <span lang="zh">隐私政策</span>
+  <span lang="en">Privacy Policy</span>
+</div>
+<div class="lang-switch">
+  <button type="button" data-set-lang="zh" class="current">中文</button>
+  <button type="button" data-set-lang="en">English</button>
+</div>
+
+
+<!-- ============== 中文版 ============== -->
+<div lang="zh">
 
 <p>Lumen 是一个安静的地方. 我们相信你的情绪只属于你.</p>
+<p class="dim">生效日期: 2026 年 7 月 25 日 · 最后更新: 2026 年 7 月 25 日</p>
 
-<h2>Lumen 不做的事</h2>
+
+<h2>核心承诺</h2>
+
+<div class="callout">
+<p><strong>Lumen 是纯本地应用.</strong> 你的所有情绪数据 (星火、低语、时间胶囊、心海观察结果) 都只存在于你的 iPhone 上. 我们没有服务器. 我们从不接收、上传、或转发这些数据到任何地方.</p>
+</div>
 
 <ul>
-  <li><strong>不收集</strong>任何个人数据 - 姓名、邮箱、电话、位置、联系人、通话记录, 一律不收集.</li>
-  <li><strong>不上传</strong>你的情绪记录 - 每一颗星火 (moodType, POWData, 低语文本) 都只存在于你的 iPhone 本地.</li>
-  <li><strong>不共享</strong>任何数据 - 我们没有第三方分析、没有广告 SDK、没有崩溃报告服务.</li>
-  <li><strong>不跟踪</strong>你 - 我们不使用 IDFA、不做跨 App 追踪、不请求 App Tracking Transparency 权限.</li>
+  <li><strong>不收集</strong>任何个人数据 — 姓名、邮箱、电话、位置、联系人、通话记录、Apple ID, 一律不收集.</li>
+  <li><strong>不上传</strong>你的情绪记录 — 每一颗星火 (mood、POW 数据、低语文本、恒星归属) 都只存在于你的 iPhone 本地 UserDefaults 与 Keychain 中.</li>
+  <li><strong>不共享</strong>任何数据 — 我们没有第三方分析、没有广告 SDK、没有崩溃报告服务、没有 A/B 测试平台.</li>
+  <li><strong>不跟踪</strong>你 — 我们不使用 IDFA、不做跨 App 追踪、不请求 App Tracking Transparency 权限.</li>
+  <li><strong>无账号</strong> — Lumen 不需要注册, 不需要登录, 不知道你是谁.</li>
 </ul>
+
+
+<h2>数据分类清单</h2>
+
+<p>为对齐 App Store "隐私标签" (Nutrition Label) 与欧盟 GDPR 第 13 条要求, 详细列出:</p>
+
+<table>
+  <thead><tr><th>数据类别</th><th>是否收集</th><th>说明</th></tr></thead>
+  <tbody>
+    <tr><td>联系信息</td><td>否</td><td>不收集姓名 / 邮箱 / 电话</td></tr>
+    <tr><td>健康与健身</td><td>否</td><td>不接入 HealthKit</td></tr>
+    <tr><td>敏感信息</td><td>否</td><td>不收集种族、政治、宗教、性取向等</td></tr>
+    <tr><td>财务信息</td><td>否</td><td>购买由 Apple StoreKit 直接处理</td></tr>
+    <tr><td>位置</td><td>否</td><td>不请求任何位置权限</td></tr>
+    <tr><td>用户内容</td><td>本地</td><td>whisper 文本、时间胶囊留言 — 只存本地, 不上传</td></tr>
+    <tr><td>标识符</td><td>否</td><td>不使用 IDFA / IDFV / 设备指纹</td></tr>
+    <tr><td>使用数据</td><td>否</td><td>不做行为分析</td></tr>
+    <tr><td>诊断</td><td>否</td><td>不做崩溃上报</td></tr>
+    <tr><td>Motion 数据</td><td>本地实时</td><td>仅呼吸仪式期间读取, 计算完立即丢弃</td></tr>
+  </tbody>
+</table>
+
 
 <h2>Lumen 使用的手机权限</h2>
 
-<p><strong>陀螺仪 (Motion & Fitness)</strong>: 仅在你双手压屏做仪式时读取, 用于计算"呼吸稳定度". 数据在仪式结束时即弃, 不写入任何位置, 也从不离开你的 iPhone.</p>
+<h3>陀螺仪 (Motion & Fitness)</h3>
+<p>仅在你双手压屏做仪式时读取, 用于计算"呼吸稳定度". 采样在仪式结束时即弃, <strong>不写入任何持久化存储, 也从不离开你的 iPhone</strong>. 你可以在系统"设置 → 隐私 → 运动与健身 → Lumen"里关闭.</p>
 
-<p><strong>本地通知 (Notifications)</strong>: 用于三层回眸推送 (周年彩蛋 / 每日回眸 / 年度回忆录). 全部推送在本地调度, 不依赖任何服务器. 你可以在系统"设置 → Lumen → 通知"里随时关闭.</p>
+<h3>本地通知 (Notifications)</h3>
+<p>用于五种回眸推送:</p>
+<ul>
+  <li><strong>周年彩蛋</strong>: 投出星火后的 7 / 30 / 365 天各一次静音提醒</li>
+  <li><strong>每日回眸</strong>: 默认关闭, 用户主动开启后每晚 21:00</li>
+  <li><strong>年度回忆录</strong>: 每年 12 月 31 日 20:00</li>
+  <li><strong>时间胶囊到期</strong>: 用户封存的胶囊到达日期时</li>
+  <li><strong>心海观察 (PRO)</strong>: 每周日 21:30</li>
+</ul>
+<p>全部推送在本地调度, 不依赖任何服务器. 你可以在系统"设置 → Lumen → 通知"里随时关闭.</p>
 
-<p>Lumen <strong>不使用</strong>位置、相机、麦克风、照片图库、通讯录、日历、健康、蓝牙、Wi-Fi 网络列表等任何其他权限.</p>
+<p>Lumen <strong>不使用</strong>位置、相机、麦克风、照片图库、通讯录、日历、健康、蓝牙、Wi-Fi 网络列表、面容 ID、指纹、剪贴板等任何其他权限.</p>
+
+
+<h2>数据存储与保留</h2>
+
+<p>Lumen 的所有数据都存储在<strong>你的 iPhone 本地</strong>:</p>
+<ul>
+  <li><strong>UserDefaults</strong>: 星火数组、封存 ID、语言偏好、主题偏好、通知开关状态</li>
+  <li><strong>Keychain</strong>: "是否已购买 PRO" 的布尔值 (不含 Apple ID)</li>
+  <li><strong>App 沙盒临时目录</strong>: 分享图片和导出的 JSON, 在 iOS 系统清理临时目录时自动删除</li>
+</ul>
+
+<p><strong>数据保留期限</strong>: 你安装 App 期间数据一直保留. 你随时可以:</p>
+<ul>
+  <li>在 App 内"设置 → 数据 → 导出星海"备份为 JSON 文件带走</li>
+  <li>直接卸载 Lumen — 所有数据随 App 一起被 iOS 系统删除, 不可恢复</li>
+</ul>
+
 
 <h2>关于低语与统计</h2>
 
 <p>Lumen 里的每一条低语, 都来自真实的人.</p>
-
-<p>一部分是我们和信任的朋友匿名手写的.</p>
-
+<p>一部分是我们和信任的朋友、以及自愿投稿的用户匿名手写的.</p>
 <p>一部分来自公开心理学材料的策展和重写.</p>
 
+<div class="callout">
 <p><strong>我们不使用 AI 生成低语.</strong></p>
-
 <p><strong>我们不虚构人物或事件.</strong></p>
+<p><strong>我们不上传你的任何数据.</strong></p>
+</div>
 
 <p>Lumen 里的每一条统计数字, 都来自权威公开报告 (WHO Mental Health Atlas, Gallup Global Emotions Report, APA Stress in America, 中国国民心理健康发展报告 等). 我们标注每一条的来源. 我们不夸大. 如果一个数字过时了, 我们会告诉你它的年份.</p>
 
+
 <h2>关于购买</h2>
 
-<p>Lumen 使用 Apple StoreKit 处理购买. Apple 会记录你的购买交易 (这是 App Store 的标准机制), 但 Lumen 本身<strong>不知道你的 Apple ID</strong>, 也不接收任何账户信息. 我们只在设备本地的 Keychain 中缓存"是否已购买"这一个布尔值.</p>
+<p>Lumen 使用 Apple StoreKit 处理购买. Apple 会记录你的购买交易 (这是 App Store 的标准机制, 受 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隐私政策</a>约束), 但 Lumen 本身<strong>不知道你的 Apple ID</strong>, 也不接收任何账户信息. 我们只在设备本地的 Keychain 中缓存"是否已购买"这一个布尔值.</p>
 
-<p>Layer 1 一次买断 · Layer 2 年度纪念集 均为一次性购买, <strong>不涉及订阅、不会自动续费</strong>.</p>
+<p>Layer 1 一次买断与 Layer 2 年度纪念集均为一次性购买, <strong>不涉及订阅、不会自动续费</strong>. 你可以随时通过"恢复购买"重新解锁 (基于 Apple ID 家庭共享).</p>
+
+
+<h2>你的权利 (GDPR / CCPA)</h2>
+
+<p>因为 Lumen 不收集数据, 传统的隐私法规里的多数权利<strong>天然满足</strong>:</p>
+
+<ul>
+  <li><strong>知情权</strong>: 本文档即披露, 使用即同意 (无需勾选).</li>
+  <li><strong>访问权</strong>: 你的数据一直在你手机里 — 打开 Lumen 即可看. "导出星海"生成完整 JSON 文件.</li>
+  <li><strong>更正权</strong>: 星火详情页可编辑 whisper (v1.1+); 时间胶囊可以提前拆封.</li>
+  <li><strong>删除权 ("被遗忘权")</strong>: 卸载 App 即彻底删除. 我们没有服务器备份.</li>
+  <li><strong>可携权</strong>: "导出星海"输出标准 JSON, 可导入到 Lumen 或未来第三方兼容工具.</li>
+  <li><strong>拒绝跟踪权 (CCPA "Do Not Sell")</strong>: Lumen 不销售 / 不共享 / 不跟踪, 无需请求.</li>
+  <li><strong>投诉权</strong>: 如认为我们侵犯了你的隐私, 请邮件 <a href="mailto:same4869@163.com">same4869@163.com</a>. 你也可以向当地数据保护机构 (欧盟成员国的 DPA / 中国网信办等) 投诉.</li>
+</ul>
+
+
+<h2>关于儿童 (COPPA / GDPR-K)</h2>
+
+<p>Lumen 不面向 13 岁以下 (COPPA 定义) 或 16 岁以下 (欧盟 GDPR 定义) 的儿童. 我们不知情地收集儿童数据. 如果你是儿童的父母或监护人, 发现你的孩子在使用 Lumen, 请卸载 App, 所有数据将随之删除.</p>
+
+
+<h2>数据安全</h2>
+
+<p>因数据全部本地存储, Lumen 的数据安全等同于你 iPhone 自身的安全 (设备密码 · 生物识别 · Face ID / Touch ID · 系统级加密). 建议给 iPhone 设置强密码.</p>
+
+<p>Keychain 里的 PRO 状态使用 <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>, iCloud 备份时<strong>不会带走</strong>, 恢复到新设备时不会误显示 PRO — 需要"恢复购买"通过 Apple ID 家庭共享重新解锁.</p>
+
+
+<h2>第三方服务</h2>
+
+<p>Lumen 只使用 Apple 官方框架:</p>
+<ul>
+  <li>SwiftUI · SpriteKit · UIKit — 系统 UI</li>
+  <li>CoreMotion — 陀螺仪采样</li>
+  <li>NaturalLanguage — 用户 whisper 的分词与情感分析 (纯本地, 不联网)</li>
+  <li>StoreKit — 购买流程</li>
+  <li>UserNotifications — 本地通知</li>
+</ul>
+<p><strong>不集成任何第三方 SDK</strong> — 无 Firebase、无 Sentry、无 Mixpanel、无 Google Analytics、无微信 SDK、无广告 SDK.</p>
+
+
+<h2>政策变更</h2>
+
+<p>本隐私政策可能因法律要求或产品变更而更新. 更新时:</p>
+<ul>
+  <li>本页顶部的"最后更新"日期会变化</li>
+  <li>如变更涉及新增数据收集, 我们会在 App 内显著位置提示 (App 更新说明或首次启动引导)</li>
+  <li>不会追溯变更 — 已经生效的隐私约定, 我们不因政策更新而对既有用户失效</li>
+</ul>
+
 
 <h2>联系方式</h2>
 
-<p>Lumen 由独立开发者 xunwang 制作. 如果你对隐私有任何疑问, 请邮件联系 <a href="mailto:same4869@163.com">same4869@163.com</a>.</p>
+<p>Lumen 由独立开发者 xunwang 制作. 如果你对隐私有任何疑问或投诉, 请邮件联系 <a href="mailto:same4869@163.com">same4869@163.com</a>. 我们承诺在 7 个工作日内回复.</p>
+
 
 <div class="crisis">
 <p><strong>关于心理危机</strong></p>
@@ -169,9 +360,233 @@ footer {
 
 <footer>
 <p>Lumen · 一次买断 · 无订阅 · 纯本地</p>
-<p style="margin-top: 6px;">Last updated: 2026-07-21</p>
+<p style="margin-top: 6px;">生效日期: 2026-07-25 · 最后更新: 2026-07-25</p>
 </footer>
 
+</div>
+
+
+<!-- ============== English ============== -->
+<div lang="en">
+
+<p>Lumen is a quiet place. We believe your emotions belong only to you.</p>
+<p class="dim">Effective: July 25, 2026 · Last updated: July 25, 2026</p>
+
+
+<h2>Core Promise</h2>
+
+<div class="callout">
+<p><strong>Lumen is a fully on-device app.</strong> All your emotional data (embers, whispers, time capsules, sea insights) exists only on your iPhone. We have no servers. We never receive, upload, or forward any of it anywhere.</p>
+</div>
+
+<ul>
+  <li><strong>No personal data collected</strong> — no name, email, phone, location, contacts, call history, or Apple ID.</li>
+  <li><strong>No emotional records uploaded</strong> — every ember (mood, POW data, whisper, star anchor) lives only in your iPhone's local UserDefaults and Keychain.</li>
+  <li><strong>No data shared</strong> — no third-party analytics, no ad SDKs, no crash reporting, no A/B testing platforms.</li>
+  <li><strong>No tracking</strong> — no IDFA, no cross-app tracking, no App Tracking Transparency prompt.</li>
+  <li><strong>No account</strong> — Lumen requires no signup, no login. We don't know who you are.</li>
+</ul>
+
+
+<h2>Data Categories</h2>
+
+<p>Per App Store Nutrition Label and EU GDPR Article 13 requirements:</p>
+
+<table>
+  <thead><tr><th>Category</th><th>Collected</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Contact Info</td><td>No</td><td>No name / email / phone</td></tr>
+    <tr><td>Health &amp; Fitness</td><td>No</td><td>HealthKit not used</td></tr>
+    <tr><td>Sensitive Info</td><td>No</td><td>No race, politics, religion, sexual orientation</td></tr>
+    <tr><td>Financial Info</td><td>No</td><td>Purchases handled by Apple StoreKit directly</td></tr>
+    <tr><td>Location</td><td>No</td><td>No location permission requested</td></tr>
+    <tr><td>User Content</td><td>On device</td><td>Whisper text, capsule messages — local only, never uploaded</td></tr>
+    <tr><td>Identifiers</td><td>No</td><td>No IDFA / IDFV / device fingerprint</td></tr>
+    <tr><td>Usage Data</td><td>No</td><td>No behavioral analytics</td></tr>
+    <tr><td>Diagnostics</td><td>No</td><td>No crash reporting</td></tr>
+    <tr><td>Motion Data</td><td>On device · ephemeral</td><td>Only during breathing ritual; discarded immediately after</td></tr>
+  </tbody>
+</table>
+
+
+<h2>Permissions Used</h2>
+
+<h3>Motion &amp; Fitness</h3>
+<p>Read only while your fingers are pressing the screen during a breathing ritual, to calculate a "breath stability" score. Samples are <strong>discarded the moment the ritual ends and never written to persistent storage or leave your iPhone</strong>. You can revoke it anytime under <em>Settings → Privacy → Motion &amp; Fitness → Lumen</em>.</p>
+
+<h3>Notifications</h3>
+<p>Used for five types of quiet local reminders:</p>
+<ul>
+  <li><strong>Anniversary</strong>: One silent reminder at T+7 / 30 / 365 days after placing an ember</li>
+  <li><strong>Nightly Echo</strong>: Off by default; opt-in schedules 9 PM daily</li>
+  <li><strong>Year in Stars</strong>: December 31 at 8 PM</li>
+  <li><strong>Time Capsule</strong>: When a sealed capsule reaches its unlock date</li>
+  <li><strong>Sea Insight (PRO)</strong>: Sunday 9:30 PM</li>
+</ul>
+<p>All notifications are scheduled locally with no server involvement. You can disable them anytime under <em>Settings → Lumen → Notifications</em>.</p>
+
+<p>Lumen <strong>does not</strong> use Location, Camera, Microphone, Photos, Contacts, Calendar, Health, Bluetooth, Wi-Fi network list, Face ID, Touch ID, Clipboard, or any other permissions.</p>
+
+
+<h2>Data Storage &amp; Retention</h2>
+
+<p>All Lumen data is stored <strong>locally on your iPhone</strong>:</p>
+<ul>
+  <li><strong>UserDefaults</strong>: Ember array, sealed IDs, language preference, theme preference, notification toggles</li>
+  <li><strong>Keychain</strong>: A single boolean for "PRO unlocked" (no Apple ID stored)</li>
+  <li><strong>App Sandbox Tmp Directory</strong>: Share images and exported JSON, auto-deleted by iOS when it cleans tmp</li>
+</ul>
+
+<p><strong>Retention</strong>: Data persists as long as Lumen is installed. You can:</p>
+<ul>
+  <li>Back up as JSON via <em>Settings → Data → Export Starfield</em></li>
+  <li>Uninstall Lumen — all data is deleted with the app by iOS, unrecoverable</li>
+</ul>
+
+
+<h2>Whispers &amp; Statistics</h2>
+
+<p>Every whisper in Lumen comes from a real person.</p>
+<p>Some are written anonymously by us, trusted friends, and users who volunteered.</p>
+<p>Some are curated and rewritten from public psychology materials.</p>
+
+<div class="callout">
+<p><strong>We do not use AI to generate whispers.</strong></p>
+<p><strong>We do not fabricate people or events.</strong></p>
+<p><strong>We do not upload any of your data.</strong></p>
+</div>
+
+<p>Every statistic in Lumen comes from authoritative public reports (WHO Mental Health Atlas, Gallup Global Emotions Report, APA Stress in America, etc.). We cite our sources. We do not exaggerate. If a number is outdated, we tell you its year.</p>
+
+
+<h2>Purchases</h2>
+
+<p>Lumen uses Apple StoreKit for purchases. Apple records your transactions per the App Store standard mechanism (subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>), but Lumen itself <strong>does not know your Apple ID</strong> and receives no account information. We only cache a single "PRO unlocked" boolean in local Keychain.</p>
+
+<p>Layer 1 one-time purchase and Layer 2 yearly keepsake are both <strong>non-subscription, non-renewing</strong>. You can restore purchases anytime (via Apple ID Family Sharing).</p>
+
+
+<h2>Your Rights (GDPR / CCPA)</h2>
+
+<p>Because Lumen does not collect data, most traditional privacy rights are <strong>naturally satisfied</strong>:</p>
+
+<ul>
+  <li><strong>Right to be informed</strong>: This document; use of the app implies consent (no checkbox needed).</li>
+  <li><strong>Right of access</strong>: Your data is on your phone — open Lumen to see it. "Export Starfield" generates a complete JSON.</li>
+  <li><strong>Right to rectification</strong>: Edit whisper in ember detail (v1.1+); time capsules can be unsealed early.</li>
+  <li><strong>Right to erasure ("Right to be Forgotten")</strong>: Uninstall the app to delete everything. We have no server backups.</li>
+  <li><strong>Right to data portability</strong>: "Export Starfield" outputs standard JSON, importable back to Lumen or future compatible tools.</li>
+  <li><strong>Right to opt out of tracking (CCPA "Do Not Sell")</strong>: Lumen does not sell / share / track. No request needed.</li>
+  <li><strong>Right to lodge a complaint</strong>: If you believe we have violated your privacy, email <a href="mailto:same4869@163.com">same4869@163.com</a>. You may also file a complaint with your local data protection authority (EU member state DPAs, California AG's office, etc.).</li>
+</ul>
+
+
+<h2>Children (COPPA / GDPR-K)</h2>
+
+<p>Lumen is not directed at children under 13 (US COPPA) or under 16 (EU GDPR). We do not knowingly collect data from children. If you are a parent or guardian and discover your child is using Lumen, please uninstall the app; all data will be deleted.</p>
+
+
+<h2>Data Security</h2>
+
+<p>Because all data is stored locally, Lumen's data security is equivalent to your iPhone's own security (device passcode · biometrics · Face ID / Touch ID · system-level encryption). We recommend setting a strong device passcode.</p>
+
+<p>The PRO status boolean in Keychain uses <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>, which is <strong>excluded from iCloud backups</strong>. Restoring to a new device does not falsely show PRO — "Restore Purchase" via Apple ID Family Sharing is needed to unlock again.</p>
+
+
+<h2>Third-Party Services</h2>
+
+<p>Lumen only uses Apple's first-party frameworks:</p>
+<ul>
+  <li>SwiftUI · SpriteKit · UIKit — system UI</li>
+  <li>CoreMotion — gyroscope sampling</li>
+  <li>NaturalLanguage — on-device tokenization and sentiment analysis of your whispers (fully offline)</li>
+  <li>StoreKit — purchases</li>
+  <li>UserNotifications — local notifications</li>
+</ul>
+<p><strong>No third-party SDKs integrated</strong> — no Firebase, no Sentry, no Mixpanel, no Google Analytics, no ad SDKs.</p>
+
+
+<h2>Changes to This Policy</h2>
+
+<p>This policy may be updated due to legal requirements or product changes. When updated:</p>
+<ul>
+  <li>The "Last updated" date at the top of this page will change</li>
+  <li>If changes involve new data collection, we will prominently notify inside the app (release notes or first-launch dialog)</li>
+  <li>No retroactive changes — previously effective privacy commitments will not be voided for existing users by policy updates</li>
+</ul>
+
+
+<h2>Contact</h2>
+
+<p>Lumen is made by independent developer xunwang. For any privacy questions or complaints, email <a href="mailto:same4869@163.com">same4869@163.com</a>. We commit to replying within 7 business days.</p>
+
+
+<div class="crisis">
+<p><strong>On Mental Health Crisis</strong></p>
+<p style="margin-top: 12px;">Lumen is not a substitute for professional mental health support.</p>
+<p>If you are experiencing a serious crisis, please reach out:</p>
+<ul style="margin-top: 8px;">
+  <li>US · 988 Suicide &amp; Crisis Lifeline: <a href="tel:988">988</a></li>
+  <li>UK · Samaritans: <a href="tel:116123">116 123</a></li>
+  <li>EU · General Emergency: <a href="tel:112">112</a></li>
+  <li>Or contact your local crisis line</li>
+</ul>
+</div>
+
+<footer>
+<p>Lumen · One-time purchase · No subscription · Fully on device</p>
+<p style="margin-top: 6px;">Effective: 2026-07-25 · Last updated: 2026-07-25</p>
+</footer>
+
+</div>
+
 </main>
+
+<script>
+// 语言切换 · 支持 URL hash / 浏览器语言自动检测 / localStorage 记忆
+(function() {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-switch button');
+
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'zh-CN');
+    document.title = lang === 'en'
+      ? 'Lumen · Privacy Policy'
+      : 'Lumen · 隐私政策';
+    buttons.forEach(function(b) {
+      b.classList.toggle('current', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('lumenPrivacyLang', lang); } catch(e) {}
+    // URL hash 同步, 方便直接分享带语言的链接 (e.g. /privacy/#en)
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + lang);
+    } else {
+      location.hash = lang;
+    }
+  }
+
+  buttons.forEach(function(b) {
+    b.addEventListener('click', function() {
+      setLang(b.getAttribute('data-set-lang'));
+    });
+  });
+
+  // 决定初始语言: URL hash > localStorage > 浏览器语言 > 默认中文
+  var initial;
+  var hash = (location.hash || '').replace('#', '').toLowerCase();
+  if (hash === 'en' || hash === 'zh') {
+    initial = hash;
+  } else {
+    try { initial = localStorage.getItem('lumenPrivacyLang'); } catch(e) {}
+    if (initial !== 'en' && initial !== 'zh') {
+      var nav = (navigator.language || 'zh').toLowerCase();
+      initial = nav.indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+  }
+  setLang(initial);
+})();
+</script>
+
 </body>
 </html>
