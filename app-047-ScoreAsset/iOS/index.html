@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高考陪跑君 · 支持中心</title>
+<style>
+  :root {
+    --indigo: #5B4EE5;
+    --blue: #3B82F6;
+    --gray-50: #f9fafb;
+    --gray-200: #e5e7eb;
+    --gray-500: #6b7280;
+    --gray-900: #111827;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, var(--indigo) 0%, var(--blue) 100%);
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(91, 78, 229, 0.3);
+  }
+  .logo svg { width: 60%; height: 60%; }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+  .subtitle {
+    color: var(--gray-500);
+    font-size: 14px;
+    margin: 0;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: var(--gray-900);
+    display: block;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .card h2 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .card p {
+    margin: 0;
+    color: var(--gray-500);
+    font-size: 13px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  footer a { color: var(--indigo); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 100 850 Q 300 830 450 750 T 870 430" stroke="#FCD34D" stroke-width="52" fill="none" stroke-linecap="round"/>
+        <polygon points="935,400 820,340 820,460" fill="#FCD34D"/>
+        <circle cx="500" cy="320" r="68" fill="white"/>
+        <rect x="466" y="390" width="80" height="185" rx="40" fill="white"/>
+        <path d="M 546 435 L 720 380" stroke="white" stroke-width="44" stroke-linecap="round"/>
+        <path d="M 466 435 L 340 510" stroke="white" stroke-width="40" stroke-linecap="round"/>
+        <path d="M 530 555 L 680 720" stroke="white" stroke-width="52" stroke-linecap="round"/>
+        <path d="M 480 555 L 380 700" stroke="white" stroke-width="48" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h1>高考陪跑君</h1>
+    <p class="subtitle">山东新高考 · 从模考到志愿</p>
+  </header>
+
+  <a href="privacy.html" class="card">
+    <h2>隐私政策</h2>
+    <p>我们如何处理你的数据 · 简短版：我们不收集</p>
+  </a>
+
+  <a href="terms.html" class="card">
+    <h2>服务条款</h2>
+    <p>使用 App 的规则和责任说明</p>
+  </a>
+
+  <a href="support.html" class="card">
+    <h2>支持与反馈</h2>
+    <p>遇到问题？发邮件给开发者</p>
+  </a>
+
+  <footer>
+    © 2026 xunwang · <a href="mailto:same4869@163.com">same4869@163.com</a>
+  </footer>
+</div>
+</body>
+</html>

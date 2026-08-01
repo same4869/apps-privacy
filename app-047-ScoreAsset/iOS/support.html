@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支持与反馈 · 高考陪跑君</title>
+<style>
+  :root {
+    --indigo: #5B4EE5;
+    --blue: #3B82F6;
+    --gray-50: #f9fafb;
+    --gray-200: #e5e7eb;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-900: #111827;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.75;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  .back {
+    display: inline-block;
+    color: var(--indigo);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .back:hover { text-decoration: underline; }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+  .subtitle {
+    color: var(--gray-500);
+    font-size: 14px;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 32px 0 12px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 15px;
+    margin: 20px 0 8px;
+    font-weight: 600;
+    color: var(--gray-700);
+  }
+  p, li {
+    font-size: 15px;
+    color: var(--gray-700);
+  }
+  ul, ol { padding-left: 24px; }
+  .cta {
+    display: block;
+    background: linear-gradient(180deg, var(--indigo) 0%, var(--blue) 100%);
+    color: white;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(91, 78, 229, 0.2);
+    transition: transform 0.15s;
+  }
+  .cta:hover { transform: translateY(-1px); }
+  .faq {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+  .faq h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: var(--gray-900);
+  }
+  .faq p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--gray-700);
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--gray-200);
+    color: var(--gray-500);
+    font-size: 13px;
+    text-align: center;
+  }
+  footer a { color: var(--indigo); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back">← 返回</a>
+  <h1>支持与反馈</h1>
+  <p class="subtitle">遇到问题或有想法？欢迎联系开发者</p>
+
+  <a href="mailto:same4869@163.com?subject=%E9%AB%98%E8%80%83%E9%99%AA%E8%B7%91%E5%90%9B%20%E5%8F%8D%E9%A6%88" class="cta">
+    发邮件到 same4869@163.com
+  </a>
+
+  <h2>常见问题</h2>
+
+  <div class="faq">
+    <h3>为什么只支持山东省？</h3>
+    <p>V1 首发版专注做透山东省数据（一分一段表 + 招生录取结果 + 双一流名单）。其它省份的数据格式和高考规则差异较大，将在后续版本陆续上线。想优先支持某个省份？欢迎邮件告诉我们。</p>
+  </div>
+
+  <div class="faq">
+    <h3>数据是最新的吗？</h3>
+    <p>目前包含山东省 2023、2024、2025、2026 四届数据。每年高考录取结束后（一般 8-9 月）会通过版本更新同步当年数据。</p>
+  </div>
+
+  <div class="faq">
+    <h3>付费后换手机数据能恢复吗？</h3>
+    <p>付费权益跟随 Apple ID：同一个 Apple ID 登录到新手机，进入 <em>研报 tab → 解锁 PRO → 右上角"恢复"</em> 即可恢复已购权益。至于模考数据、心愿单等本地数据，需要提前使用 <em>我的 → 数据备份 → 导出全部数据</em> 保存 JSON 备份，然后在新手机上导入恢复。</p>
+  </div>
+
+  <div class="faq">
+    <h3>学生解锁和家庭解锁怎么选？</h3>
+    <p>如果只需要学生自己看陪跑数据 + 学生手记，¥68 学生解锁就够。如果家长也需要看家长决策手册（含独家 5 页家长视角：投资回报比、断档预警、专业冷热、亲子共读、客观分析），推荐 ¥168 家庭解锁。家庭解锁开启了苹果家庭共享，家庭内一个 Apple ID 购买后其它成员可免费使用。</p>
+  </div>
+
+  <div class="faq">
+    <h3>已经买了学生解锁想升级到家庭解锁怎么办？</h3>
+    <p>目前苹果 IAP 不支持"补差价升级"，你需要在付费墙里选择家庭解锁并支付 ¥168 全额。学生解锁不会因此失效，你可以联系我们通过 Apple App Store 退款渠道申请退回学生解锁的 ¥68。</p>
+  </div>
+
+  <div class="faq">
+    <h3>报告生成后数据能保存多久？</h3>
+    <p>永久保存。已生成的学生手记 / 家长决策手册都会以 JSON 快照 + PDF 归档到你设备的本地存储中，只要不清空 App 数据、不卸载 App，就一直能查看。</p>
+  </div>
+
+  <div class="faq">
+    <h3>App 有 bug 或数据不准怎么办？</h3>
+    <p>发邮件告诉我们，附上：iOS 系统版本、App 版本号（我的 tab → 关于 → 版本）、遇到问题的截图或详细复现步骤。我们会在下一个版本修复。</p>
+  </div>
+
+  <div class="faq">
+    <h3>能否申请退款？</h3>
+    <p>所有付费通过苹果 App Store 处理，你可以在 <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> 申请退款。苹果的退款政策独立于我们，我们无法直接为你退款。但如遇服务不可用或内容明显有误，我们可协助你和苹果沟通。</p>
+  </div>
+
+  <div class="faq">
+    <h3>如何加入外省 waitlist？</h3>
+    <p>目前请发邮件到 <a href="mailto:same4869@163.com">same4869@163.com</a>，写上"外省 waitlist"和你的省份，我们会在你所在省份上线时通知你。V2 版本会在 App 内加正式的 waitlist 入口。</p>
+  </div>
+
+  <h2>反馈时可以告诉我们</h2>
+  <ul>
+    <li>数据错误或不一致</li>
+    <li>App 崩溃或功能异常</li>
+    <li>希望增加的功能</li>
+    <li>希望支持的省份</li>
+    <li>UI 或文案的改进建议</li>
+    <li>其它任何想法</li>
+  </ul>
+
+  <footer>
+    © 2026 xunwang · <a href="index.html">支持中心</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">服务条款</a>
+  </footer>
+</div>
+</body>
+</html>
