@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GTD 收集盒 的隐私政策">
+<title>GTD 收集盒 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>GTD 收集盒 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：GTD 收集盒开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>GTD 收集盒 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您在应用内创建的收集盒条目、四象限任务、上下文标签、归档记录、周回顾数据，全部仅保存在您本机的应用沙箱里，开发者无法访问。</p>
+<h2>2. 数据存储</h2>
+<ul>
+  <li>所有任务、标签、归档数据 100% 存储在本机，使用 HarmonyOS Preferences 本地存储接口。</li>
+  <li>本应用无任何联网代码，不请求任何网络权限，数据不会上传到任何服务器。</li>
+  <li>卸载应用时，系统会一并清空该沙箱数据。</li>
+  <li>您在设置中触发"导出 CSV"时，文件写入您选定的本地位置，不经过任何服务器。</li>
+  <li>您在设置中可随时触发"清空全部数据"，一键删除所有本机业务数据，操作不可恢复。</li>
+</ul>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK，不集成广告 SDK，不集成统计 SDK，不集成社交分享 SDK，不集成推送 SDK，不集成支付 SDK。</p>
+<h2>4. 权限说明</h2>
+<p>本应用申请的权限如下，所有权限都可以在系统设置中关闭：</p>
+<ul>
+  <li><strong>ohos.permission.NOTIFICATION_CONTROLLER（通知权限，可选）</strong>：仅在您主动打开"周回顾提醒"开关时请求，用于每周固定时刻在本机触发一条本地通知"该做本周 Reflect 回顾了"。本地通知完全在您的设备上触发，不经任何服务器，不读取您的通知内容。不打开该开关则不请求。</li>
+</ul>
+<p>本应用不申请以下任何权限：定位、麦克风、相机、通讯录、日历、相册、健康数据、运动传感器、蓝牙、剪贴板、后台常驻运行。</p>
+<h2>5. 您的权利</h2>
+<ul>
+  <li><strong>导出</strong>：在"全部"段的设置入口中选择"导出全部数据"，可将收集盒条目 / 任务 / 标签全部导出为 UTF-8 CSV，用于备份或迁移到其它工具。</li>
+  <li><strong>删除</strong>：长按单条任务可以永不可恢复地删除该条；在设置中可一键"清空全部数据"，二次确认后删除所有本机业务数据。</li>
+  <li><strong>停用</strong>：直接卸载应用即可一次性清空所有本机数据，不留残留。</li>
+  <li><strong>关闭通知</strong>：在系统"通知管理"中关闭本应用的通知权限，或在应用内"周回顾提醒"开关关闭。</li>
+</ul>
+<h2>6. 联系我们</h2>
+<p>如对本隐私政策有疑问或反馈，可邮件联系：</p>
+<ul>
+  <li>开发者：GTD 收集盒开发团队</li>
+  <li>邮箱：119123059@qq.com</li>
+</ul>
+
+<footer>
+  © 2026 GTD 收集盒开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
