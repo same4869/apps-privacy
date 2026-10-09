@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="考场模拟 的隐私政策">
+<title>考场模拟 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>考场模拟 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：考场模拟开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>考场模拟 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您对本应用的所有使用行为——选择考试模板、新建自建模板、开考、按下"下一题"、查看题级用时条形图、对比本次与历史均速、修改外观 / 防误触间隔锁 / 结束提示方式、导出 CSV——都在您本机设备内完成，不会被记录、不会被上传。</p>
+<p>本应用<strong>不涉及</strong>任何真题 / 答案 / 教学内容 / 考试内容判定；15 条内置模板仅为"考试名 + 时长分钟数 + 推荐题数"的时长模板信息，不含任何题目正文或答案。</p>
+<h2>2. 数据存储</h2>
+<p>您在本应用中产生的所有内容——自建考试模板（模板名、时长、题数）、历史考场场次记录（模板快照、开始/结束时间、实际用时、是否中止、题数、本次均速）、题级用时切片（每题秒数、是否超推荐题数）、以及本地偏好（外观模式、防误触间隔秒数、结束提示方式）——都仅存储在您本机设备的应用沙盒目录中（通过 shared-kit 的 PrefsStore），不会上传到任何服务器，不与任何第三方共享。</p>
+<p>卸载本应用将一并清除所有本地模板、历史场次、题级切片与偏好数据。</p>
+<p>当您在设置页主动点击"导出全部数据"、或在本次结束报告页主动点击"导出本场 CSV"时，本应用会在您的设备下载目录生成 CSV 文件（<code>exampacer-sessions-YYYYMMDD.csv</code> / <code>exampacer-timings-YYYYMMDD.csv</code> / <code>exampacer-templates-YYYYMMDD.csv</code>，单场导出的文件名会追加场次 id 前 8 位）。这些文件由您自行持有和使用，本应用不会主动读取、上传或分享它们。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK（无广告 SDK、无统计分析 SDK、无崩溃上报 SDK、无社交分享 SDK、无推送 SDK、无账号登录 SDK）。</p>
+<h2>4. 权限说明</h2>
+<p>本应用不申请任何敏感权限。考场结束的"响铃"与"震动"提示走系统 Bell / Vibrator 原生 API，无需申请权限；您可以在设置页将结束提示切换为"仅震"或"静默"。</p>
+<p>本应用<strong>不申请</strong>：</p>
+<ul>
+  <li>不申请位置权限（不记录您在哪里）</li>
+  <li>不申请网络权限（无联网能力，不发任何 HTTP / WebSocket 请求）</li>
+  <li>不申请相机 / 麦克风 / 存储读写权限（CSV 写入下载目录由系统文件 API 完成，不触敏感存储权限）</li>
+  <li>不申请日历读写权限</li>
+  <li>不申请通知权限（考场态只在前台进行；无每日提醒、无后台通知）</li>
+  <li>不申请传感器权限（无步数、无心率、无方向传感等任何采集）</li>
+  <li>不申请后台常驻权限（考场计时仅在前台进行；离开 app 累计超过 10 秒后当前场自动中止，不走 KEEP_BACKGROUND_RUNNING）</li>
+</ul>
+<h2>5. 您的权利</h2>
+<ul>
+  <li><strong>查看</strong>：您对本应用的使用无需任何账号，您的所有自建模板、历史场次、题级切片都在 app 内可见</li>
+  <li><strong>修改</strong>：自建模板可随时编辑 / 删除；历史场次可在单场详情页删除；外观 / 防误触间隔 / 结束提示可随时切换</li>
+  <li><strong>导出</strong>：设置页"导出全部数据"可一键导出全部数据到系统下载目录（UTF-8 CSV）；本次结束报告页"导出本场 CSV"可仅导出当前场次</li>
+  <li><strong>彻底清除</strong>：卸载本应用将删除全部本地模板、历史场次、题级切片与偏好数据，无服务器备份</li>
+</ul>
+<h2>6. 联系我们</h2>
+<p>如有任何隐私相关问题，请发送邮件至：119123059@qq.com</p>
+
+<footer>
+  © 2026 考场模拟开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
