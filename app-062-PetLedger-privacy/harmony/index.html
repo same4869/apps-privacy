@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="宠物账本 的隐私政策">
+<title>宠物账本 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>宠物账本 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：宠物账本开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>宠物账本 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您对本应用的所有使用行为——建立宠物档案、记录消费流水、填写疫苗 / 驱虫日程、查看本月汇总、导出 CSV——都在您本机设备内完成，不会被记录、不会被上传。</p>
+<p>本应用不要求也不支持注册 / 登录；不存在任何账号体系，不接入任何第三方 OAuth。</p>
+<h2>2. 数据存储</h2>
+<p>您在应用内创建的所有数据——宠物档案（名字 / 物种 / 备注）、消费流水（宠物 / 类目 / 金额 / 日期 / 备注）、疫苗与驱虫日程（名称 / 下次日期 / 备注）、本地偏好（外观 Light / Dark / Auto）——仅存储在您本机设备的应用沙盒 PrefsStore 中，不会上传到任何服务器，不与任何第三方共享。</p>
+<p>CSV 导出功能生成的文件写入应用沙盒 <code>Downloads/</code> 子目录，仍属于本应用在您本机设备上的私有存储空间；本应用不会主动将该文件分享到微信 / QQ / 邮件 / 云盘等任何外部应用，也不唤起系统分享面板。您可以自行在系统"文件管理"中查看 / 拷贝 / 删除该文件。</p>
+<p>卸载本应用将一并清除所有本地宠物档、流水、日程与偏好数据。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK：</p>
+<ul>
+  <li>无广告 SDK</li>
+  <li>无统计分析 SDK（无友盟 / 无 TalkingData / 无 Firebase Analytics）</li>
+  <li>无崩溃上报 SDK</li>
+  <li>无社交分享 SDK</li>
+  <li>无推送 SDK</li>
+  <li>无地图 / 定位 SDK</li>
+  <li>无支付 SDK</li>
+</ul>
+<h2>4. 权限说明</h2>
+<p>本应用<strong>不申请</strong>任何需用户授权的敏感权限：</p>
+<ul>
+  <li>不申请网络权限（本应用无联网能力）</li>
+  <li>不申请通知权限（本应用不发送任何系统通知；疫苗 / 驱虫日程的"到期"由您主动打开 app 查看）</li>
+  <li>不申请位置权限</li>
+  <li>不申请相机 / 麦克风权限</li>
+  <li>不申请存储外部读写权限（CSV 仅写入应用沙盒 Downloads 子目录）</li>
+  <li>不申请日历读写权限</li>
+  <li>不申请通讯录读写权限</li>
+</ul>
+<h2>5. 关于疫苗与驱虫日程档案</h2>
+<p>本应用的"疫苗 / 驱虫日程"模块仅是<strong>用户自己填写的日程档案</strong>——您输入"名称 + 下次日期 + 备注"3 个字段后，应用按日期倒计天数展示在您本机设备上。本应用：</p>
+<ul>
+  <li>不预制任何疫苗 / 驱虫条目库</li>
+  <li>不提供任何医疗相关建议或指导</li>
+  <li>不与任何医疗 / 兽医服务打通</li>
+  <li>不触发任何系统通知或本地提醒</li>
+</ul>
+<p>该模块承载的数据与消费流水同处应用沙盒 PrefsStore，不上传、不共享。</p>
+<h2>6. 您的权利</h2>
+<ul>
+  <li><strong>查看</strong>：您对本应用的使用无需任何账号，所有数据都在当前宠物的主区列表与侧抽屉中可见</li>
+  <li><strong>修改</strong>：所有宠物档 / 流水 / 日程 / 偏好均可随时编辑或删除</li>
+  <li><strong>彻底清除</strong>：卸载本应用将删除全部本地数据（包括沙盒 Downloads 内的 CSV），无服务器备份</li>
+</ul>
+<h2>7. 适用范围</h2>
+<p>本政策适用于本应用（鸿蒙单机版）全部功能。本应用无 Web 端、无其它平台版本、无云端服务。</p>
+<h2>8. 联系我们</h2>
+<p>如有任何隐私相关问题，请发送邮件至：119123059@qq.com</p>
+
+<footer>
+  © 2026 宠物账本开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
