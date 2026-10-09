@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="周复盘打卡 的隐私政策">
+<title>周复盘打卡 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>周复盘打卡 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：周复盘打卡开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>周复盘打卡 隐私政策</h1>
+<p><strong>生效日期</strong>:2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您对本应用的所有使用行为——每周打分、填写一句话亮点与教训、查看 52 周反思地图、查看趋势折线、开关周日本地通知——都在您本机设备内完成,不会被记录、不会被上传。</p>
+<p>本应用不要求也不支持注册 / 登录;不存在任何账号体系,不接入任何第三方 OAuth。</p>
+<h2>2. 数据存储</h2>
+<p>您在应用内创建的所有数据——每周 5 维度打分(成就 / 情绪 / 学习 / 关系 / 身体,各 1-5 分)、每周两句话(亮点 / 教训,各 1-50 字可留空)、本地偏好(外观 Light / Dark / Auto、周日通知开关)——仅存储在您本机设备的应用沙盒 PrefsStore 中,不会上传到任何服务器,不与任何第三方共享。</p>
+<p>本应用无 CSV 导出、无云端备份、无跨设备同步。您所有的 52 周数据仅存在当前设备上。</p>
+<p>卸载本应用将一并清除所有本地打分、两句话、偏好与通知注册。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK:</p>
+<ul>
+  <li>无广告 SDK</li>
+  <li>无统计分析 SDK(无友盟 / 无 TalkingData / 无 Firebase Analytics)</li>
+  <li>无崩溃上报 SDK</li>
+  <li>无社交分享 SDK</li>
+  <li>无远端推送 SDK(无 HMS Push / FCM / APNS)</li>
+  <li>无地图 / 定位 SDK</li>
+  <li>无支付 SDK</li>
+  <li>无 NLP / 文本分析 SDK(您写的两句话仅本地存储,不做任何自动分析)</li>
+</ul>
+<h2>4. 权限说明</h2>
+<p>本应用<strong>仅在您主动开启"周日复盘通知"开关时</strong>才请求通知权限;其余任何敏感权限均不申请:</p>
+<ul>
+  <li><strong>通知权限</strong> <code>ohos.permission.NOTIFICATION_CONTROLLER</code>:仅当您在"外观"页主动开启"周日复盘通知"开关时请求;用于每周日 21:30 弹一条本地通知"该做本周复盘了"。本通知走系统本地 reminderAgent API,<strong>不涉及任何服务器推送 / 云端下发</strong>。您可以在"外观"页随时关闭该开关,关闭后彻底不走 reminderAgent;也可在系统设置中撤销本应用的通知权限。</li>
+  <li>不申请网络权限(本应用无联网能力)</li>
+  <li>不申请位置权限</li>
+  <li>不申请相机 / 麦克风权限</li>
+  <li>不申请存储外部读写权限</li>
+  <li>不申请日历读写权限</li>
+  <li>不申请通讯录读写权限</li>
+</ul>
+<h2>5. 关于"情绪"维度与两句话输入</h2>
+<p>本应用的"情绪"维度仅是<strong>一个 1-5 分滑杆</strong>——您拖动滑杆给过去一周的情绪整体感受打个分,应用将该分数作为 5 维度之一存入 PrefsStore。本应用:</p>
+<ul>
+  <li>不预制任何心理问卷 / 心理评估量表 / 心理测试</li>
+  <li>不提供任何心理 / 情绪 / 医疗相关建议或指导</li>
+  <li>不与任何医疗 / 心理咨询服务打通</li>
+  <li>不对您输入的"亮点 / 教训"两句话做任何自动文本分析 / 情感分类 / 关键词提取</li>
+  <li>不触发基于您心情内容的任何算法推荐或提醒</li>
+</ul>
+<p>您的两句话仅作为"回看素材"存在应用沙盒,除非您主动打开 app 查看,不会被任何逻辑读取。</p>
+<h2>6. 关于周日本地通知</h2>
+<p>本应用的"周日复盘通知"是一个<strong>默认关闭</strong>的可选功能:</p>
+<ul>
+  <li>默认 OFF,不主动骚扰您</li>
+  <li>需要您在"外观"页主动开启,并授权系统通知权限</li>
+  <li>开启后仅每周日 21:30 走系统本地 reminderAgent 弹一条通知</li>
+  <li>通知内容固定为"周复盘打卡 · 该做本周复盘了 · 15 分钟 5 项分 2 句话",<strong>不含您任何个人数据</strong></li>
+  <li>本应用<strong>不</strong>走任何远端推送(无 HMS Push / FCM / APNS / 自建 WebSocket)</li>
+  <li>您随时可在"外观"页关闭该开关,彻底清除所有已注册的本地通知</li>
+</ul>
+<h2>7. 您的权利</h2>
+<ul>
+  <li><strong>查看</strong>:您对本应用的使用无需任何账号,所有数据都在当前年份的 52 瓦主屏与单周详情 overlay 中可见</li>
+  <li><strong>修改 / 删除</strong>:</li>
+  <li>当周(本周)打卡可随时覆盖重打</li>
+  <li>历史周打卡不可直接改写(避免篡改回忆),但可在"单周详情"overlay 中删除后再回填</li>
+  <li>外观偏好 / 通知开关 / 隐私同意可随时调整</li>
+  <li><strong>彻底清除</strong>:卸载本应用将删除全部本地数据(52 周打分、所有两句话、偏好、通知注册),无服务器备份</li>
+</ul>
+<h2>8. 适用范围</h2>
+<p>本政策适用于本应用(鸿蒙单机版)全部功能。本应用无 Web 端、无其它平台版本、无云端服务。</p>
+<h2>9. 联系我们</h2>
+<p>如有任何隐私相关问题,请发送邮件至:119123059@qq.com</p>
+
+<footer>
+  © 2026 周复盘打卡开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
