@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="潮汐历 的隐私政策">
+<title>潮汐历 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>潮汐历 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：潮汐历开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>潮汐历 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您对本应用的所有使用行为——切换港口、收藏/取消收藏港口、查看今日高低潮时刻表、查看 24 小时潮位曲线、翻月历查看某日摘要、切换外观、导出 CSV——都在您本机设备内完成，不会被记录、不会被上传。</p>
+<p>本应用是<strong>潮汐参考工具</strong>，所使用的港口位置、调和常数（M2 / S2 / N2 / K1 / O1 等）均为公开水文天文参数，不包含任何商业水文数据或气象预报内容。本应用的潮位预测结果为近似天文潮汐历，仅供钓鱼 / 赶海 / 沿海生活等休闲用途参考，不构成任何航行安全建议——实际航行请以海事部门官方潮汐表为准。</p>
+<h2>2. 数据存储</h2>
+<p>您在本应用中产生的所有内容——收藏的港口清单、最近选择的港口、本地偏好（外观模式、默认起始港口、是否显示米制 / 英制潮高）——都仅存储在您本机设备的应用沙盒目录中（通过 shared-kit 的 PrefsStore），不会上传到任何服务器，不与任何第三方共享。</p>
+<p>本应用内置的 200+ 港口调和常数参数（存储于应用安装包随应用一同分发的 <code>rawfile/ports.json</code>）为公开水文天文数据，不随您使用而变化，也不包含任何可识别到您个人的信息。</p>
+<p>卸载本应用将一并清除所有本地收藏、港口切换记录与偏好数据。</p>
+<p>当您在设置页主动点击"导出全部数据"、或在今日 / 月历页主动点击"导出本月 CSV"时，本应用会在您的设备下载目录生成 CSV 文件（<code>tidealmanac-tides-&lt;港口&gt;-YYYYMM.csv</code>）。这些文件由您自行持有和使用，本应用不会主动读取、上传或分享它们。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK（无广告 SDK、无统计分析 SDK、无崩溃上报 SDK、无社交分享 SDK、无推送 SDK、无账号登录 SDK、无地图 SDK、无气象 SDK）。</p>
+<h2>4. 权限说明</h2>
+<p>本应用不申请任何敏感权限。</p>
+<p>本应用<strong>不申请</strong>：</p>
+<ul>
+  <li>不申请位置权限（港口由您在列表中主动选择；本应用从不读取您真实的地理位置）</li>
+  <li>不申请网络权限（无联网能力，不发任何 HTTP / WebSocket 请求；所有潮位预测由本地调和分析公式即时计算）</li>
+  <li>不申请相机 / 麦克风权限</li>
+  <li>不申请存储读写权限（CSV 写入下载目录由系统文件 API 完成，不触敏感存储权限）</li>
+  <li>不申请日历读写权限</li>
+  <li>不申请通知权限（无潮位到点提醒、无高低潮通知；您主动打开 app 查看）</li>
+  <li>不申请传感器权限</li>
+  <li>不申请后台常驻权限</li>
+</ul>
+<h2>5. 您的权利</h2>
+<ul>
+  <li><strong>查看</strong>：您对本应用的使用无需任何账号，您的所有收藏港口、偏好设置均在 app 内可见</li>
+  <li><strong>修改</strong>：收藏港口可随时添加 / 移除；外观 / 默认港口 / 米英制可随时切换</li>
+  <li><strong>导出</strong>：设置页"导出全部数据"可一键导出当前所有收藏港口当月的潮汐表到系统下载目录（UTF-8 CSV）；今日 / 月历页"导出本月 CSV"可仅导出当前港口当月数据</li>
+  <li><strong>彻底清除</strong>：卸载本应用将删除全部本地收藏与偏好数据，无服务器备份</li>
+</ul>
+<h2>6. 联系我们</h2>
+<p>如有任何隐私相关问题，请发送邮件至：119123059@qq.com</p>
+
+<footer>
+  © 2026 潮汐历开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
