@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="阶梯电费管家 的隐私政策">
+<title>阶梯电费管家 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>阶梯电费管家 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：阶梯电费管家开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>阶梯电费管家 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。</p>
+<p>阶梯电费管家是一款本地的居民阶梯电费手算器（本地电费计算工具）。您在应用内 手动输入的月用电 kWh（数字）、选择的省份（固定枚举中的中文名）、每次点击 "计算"后由本机生成的"输入 + 结果"快照（时间戳 / 省份名 / kWh / ￥ 金额 / 三段阶梯 kWh 与小计）全部由您主动输入或点击触发产生，仅用于本机的"分段公式 计算"显示与"历史回看"排序，不离开您的设备。</p>
+<p>应用不读取您的通讯录、相册、位置、通话记录、短信、日历、系统设置、设备 ID、 IMEI、IDFA、OAID、户号、电表号、运营商信息，或任何其他可识别到您个人的硬件 / 账号 / 公用事业账户标识。</p>
+<h2>2. 数据存储</h2>
+<p>您在本应用内输入的 kWh、选择的省份、历次计算快照 100% 存储在您本机的应用沙盒 Preferences 中（key 前缀 <code>biz_tierpower_v1_</code>），不离开您的设备、不上传到任何 服务器、不同步到任何云端账户。</p>
+<p>31 省的阶梯分段 / 单价常量（居民阶梯电价政策参数）<strong>硬编码在应用的 ArkTS 常量 文件中</strong>，随应用安装包一次性落到您的设备；本应用不从任何服务器下载 / 更新 这些常量，所有阶梯政策数据随版本号发布固定。</p>
+<p>卸载本应用会清空上述本地数据，恢复出厂设置也会清空上述数据。本应用不提供 "账号找回数据" / "重装恢复数据" 功能。</p>
+<p>"复制结果到剪贴板"功能仅调用 HarmonyOS 系统的 pasteboard API 写入一段纯 文本（内容为您当前的计算输入与结果，由您主动触发），不触发系统分享面板， 不自动发送到任何外部位置。您可以自行把该文本粘贴到您选择的目的地（本应用 不参与此粘贴过程）。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK，包括但不限于：</p>
+<ul>
+  <li>不集成任何统计 / 埋点 / 分析 SDK（友盟 / 神策 / GrowingIO / Firebase Analytics 等）</li>
+  <li>不集成任何广告 SDK（穿山甲 / 优量汇 / 快手联盟 / AdMob 等）</li>
+  <li>不集成任何推送 SDK（极光 / 个推 / 华为 Push Kit 等）</li>
+  <li>不集成任何社交登录 / 分享 SDK（微信 / QQ / 微博 / ShareKit 等）</li>
+  <li>不集成任何地图 / 定位 SDK（高德 / 百度地图 / 腾讯地图 / Location Kit 等）</li>
+  <li>不集成任何图像识别 / OCR / AI 相关 SDK</li>
+  <li>不集成任何支付 / 收银 / 账单查询 SDK（支付宝 / 微信支付 / 国网 95598 / 支付</li>
+</ul>
+<p>Kit 等）</p>
+<p>应用仅依赖 HarmonyOS 系统提供的基础 UI 与存储 API（ArkUI / Preferences / Pasteboard），不依赖任何需要联网的鸿蒙 Kit。</p>
+<h2>4. 权限说明</h2>
+<p>本应用不申请任何敏感权限。</p>
+<ul>
+  <li>不申请相机权限（无 OCR、无拍照识别、无电表照片采集）</li>
+  <li>不申请相册 / 存储读写权限（无图片附件 / 无文件导入 / 无文件导出；复制结果仅</li>
+</ul>
+<p>走剪贴板）</p>
+<ul>
+  <li>不申请位置权限（省份由用户在应用内手动选择，与系统位置无关）</li>
+  <li>不申请麦克风权限</li>
+  <li>不申请通知权限（本应用不发送任何推送、不弹本地提醒 / 不发闹钟）</li>
+  <li>不申请日历权限</li>
+  <li>不申请通讯录权限</li>
+  <li>不申请电话 / 短信权限（本应用不读 / 不查任何户号 / 不接收电力公司短信）</li>
+  <li>不申请设备信息权限</li>
+  <li>不申请网络权限（应用全程无网，不发送任何网络请求；31 省阶梯政策以 2024 年</li>
+</ul>
+<p>公开发布版本随应用安装包一次性落到您的设备）</p>
+<h2>5. 您的权利</h2>
+<ul>
+  <li><strong>删除单条历史</strong>：在"历史记录"区段长按任一条快照 → 选择"删除本条"→</li>
+</ul>
+<p>该快照从本机 Preferences 中永久移除。</p>
+<ul>
+  <li><strong>清空全部历史</strong>：在"历史记录"区段右上角单击"清空"→ 二次确认后，所有</li>
+</ul>
+<p>历史快照从本机 Preferences 中永久移除；您选择的省份与阶梯数据不受影响。</p>
+<ul>
+  <li><strong>切换省份</strong>：在"省份"行单击"切换 ›"→ 从 31 省列表中重选 → 新省份偏好</li>
+</ul>
+<p>覆盖写入本机。</p>
+<ul>
+  <li><strong>复制结果</strong>：长按任一历史条 → "复制结果到剪贴板"→ 您可以把纯文本粘贴到</li>
+</ul>
+<p>您选择的目的地（本应用不读 / 不写除剪贴板以外的任何位置）。</p>
+<ul>
+  <li><strong>清空全部数据</strong>：通过系统设置 → 应用管理 → 阶梯电费管家 → 存储 → 清除</li>
+</ul>
+<p>数据，可一次性清空本应用的全部数据。</p>
+<ul>
+  <li><strong>卸载应用</strong>：直接卸载本应用，所有本机数据随之清空，不留任何残留。</li>
+</ul>
+<p>因本应用不收集您的任何可识别到个人的信息、不设账号体系、不上传任何数据，故 不涉及"查询个人数据副本 / 要求删除云端数据 / 账号注销"等场景 —— 您对本机 数据的完全控制即对您数据的完全控制。</p>
+<h2>6. 联系我们</h2>
+<p>如您对本隐私政策有任何疑问或建议，欢迎联系：</p>
+<ul>
+  <li>开发者：阶梯电费管家开发团队</li>
+  <li>邮箱：119123059@qq.com</li>
+</ul>
+<p>本应用的阶梯政策数据以 <strong>2024 年公开发布的居民阶梯电价政策</strong>为基准，政策调整 由开发团队跟进年度更新并通过新版本发布，用户可在 AGC 应用更新日志中看到"阶梯 政策数据更新至 YYYY 年版"的提示。本应用的所有计算结果为估算，不代表任何电力 公司的实时账单金额，实际账单以您当地电力公司开具的账单为准。</p>
+<p>本隐私政策如有更新，将在本应用新版本中同步更新"生效日期"，并通过 AGC 应用 更新日志通告变更要点。</p>
+
+<footer>
+  © 2026 阶梯电费管家开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
