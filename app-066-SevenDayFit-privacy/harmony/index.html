@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="七日练 的隐私政策">
+<title>七日练 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>七日练 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：七日练开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>七日练 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。七日练是一款纯本地的健身打卡工具，不要求您注册账号、不要求您填写姓名 / 手机 / 邮箱 / 生日 / 性别 / 身高 / 体重 / 职业等任何个人属性。</p>
+<h2>2. 数据存储</h2>
+<p>您在七日练中的全部数据 —— 项目库条目、每日勾选记录、本周 7 格状态、月视图柱状数据、streak 数值、外观偏好、每日提醒开关状态 —— 100% 保存在应用沙盒的 PrefsStore 中，不离开您的设备。</p>
+<ul>
+  <li>存储位置：鸿蒙系统为本应用分配的沙盒目录</li>
+  <li>存储形式：PrefsStore 键值对，key 统一以 <code>biz_sevendayfit_v1_</code> 作为前缀</li>
+  <li>典型 key：</li>
+  <li><code>biz_sevendayfit_v1_lib</code> —— 项目库（您自建的项目名数组）</li>
+  <li><code>biz_sevendayfit_v1_day_YYYYMMDD</code> —— 单日打卡记录</li>
+  <li><code>biz_sevendayfit_v1_appearance</code> —— 外观偏好（Light / Dark / Auto）</li>
+  <li><code>biz_sevendayfit_v1_reminder_on</code> —— 每日提醒开关状态</li>
+  <li>卸载 app → 鸿蒙系统自动清除本应用沙盒的全部数据，无残留</li>
+</ul>
+<p>本应用<strong>不联网、不上传、不同步</strong>任何数据到任何服务器 / 云端 / 第三方。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK —— 没有广告 SDK、没有统计分析 SDK（无友盟 / 极光 / 神策 / 诸葛等）、没有推送 SDK（无 HMS Push / FCM）、没有登录 SDK、没有社交 SDK、没有图表 SDK、没有崩溃上报 SDK。</p>
+<p>本应用仅使用鸿蒙系统提供的原生 API：PrefsStore（本地键值存储）、ArkTS Canvas（原生绘制）、reminderAgent（本地通知，仅当您主动开启"每日提醒"开关时才注册）。</p>
+<h2>4. 权限说明</h2>
+<p>本应用申请的敏感权限清单：</p>
+<p>| 权限 | 鸿蒙权限名 | 用途 | 触发时机 | |---|---|---|---| | 本地通知 | <code>ohos.permission.NOTIFICATION_CONTROLLER</code> | 让系统在每天 20:00 弹一条本机提醒"今天练了吗" | 仅在您进入"我的" Tab → 每日提醒开关 → 首次打开时请求一次；您拒绝即不弹通知 |</p>
+<p>本应用<strong>不申请</strong>以下任何敏感权限：</p>
+<ul>
+  <li>不读取位置（无 LOCATION）</li>
+  <li>不打开相机（无 CAMERA）</li>
+  <li>不录音（无 MICROPHONE）</li>
+  <li>不读取联系人（无 CONTACTS）</li>
+  <li>不读写日历（无 CALENDAR）</li>
+  <li>不读写外部存储（无 READ_MEDIA / WRITE_MEDIA）</li>
+  <li>不读健康数据（无 HealthKit 类权限）</li>
+  <li>不读运动传感器（无 ACTIVITY_MOTION / 加速度计 / 心率带 / 蓝牙秤）</li>
+  <li>不联网（无 INTERNET）</li>
+</ul>
+<h2>5. 您的权利</h2>
+<p>您对本应用中的数据享有完全的本地控制权：</p>
+<ul>
+  <li><strong>查看</strong>：所有数据在应用内本周 Tab / 月视图 Tab / 项目库 Tab 可直接看到</li>
+  <li><strong>删除单条</strong>：进入"项目库" Tab 长按某条项目可删除该项目及其所有历史记录；进入"本周" Tab 的历史日格可清空该日打卡</li>
+  <li><strong>全部清空</strong>：卸载 app 即可清除全部数据</li>
+  <li><strong>停用提醒</strong>：进入"我的" Tab → 每日提醒开关可随时关闭本地通知</li>
+</ul>
+<p>本应用不提供"账号注销"入口，因为本应用根本不存在账号。</p>
+<h2>6. 关于未成年人</h2>
+<p>本应用不针对 14 岁以下未成年人开发、不收集未成年人个人信息。本应用无内购、无广告、无 UGC 社区、无社交入口。</p>
+<h2>7. 政策变更</h2>
+<p>当本政策发生实质变更时，我们会在应用更新日志中显著告知。您继续使用本应用即视为接受变更后的政策。</p>
+<h2>8. 联系我们</h2>
+<p>如您对本政策有任何疑问、意见或投诉，欢迎邮件联系：</p>
+<p><strong>邮箱</strong>：119123059@qq.com <strong>开发者名</strong>：七日练开发团队</p>
+<p>我们会在收到邮件后的 7 个工作日内回复。</p>
+
+<footer>
+  © 2026 七日练开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
