@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="一小刻 的隐私政策">
+<title>一小刻 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>一小刻 隐私政策</strong></div>
+  <div class="row">版本 v1.0.0 ・ 生效日期 2026-10-10</div>
+  <div class="row">开发者：一小刻开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>一小刻 隐私协议</h1>
+<p><strong>版本</strong>：v1.0.0 <strong>生效日期</strong>：2026-10-10 <strong>适用应用</strong>：一小刻（PomoFlask） <strong>开发者联系</strong>：119123059@qq.com</p>
+<p>本协议说明一小刻这款应用会（和不会）如何处理你的数据。</p>
+<h2>一、我们收集什么</h2>
+<p><strong>什么都不收集。</strong> 一小刻是一款 100% 本地单机应用。</p>
+<ul>
+  <li>不收集账号信息（本应用没有账号功能）</li>
+  <li>不收集设备标识符（IMEI / IDFA / OAID / MAC / UUID / 等）</li>
+  <li>不收集位置信息</li>
+  <li>不收集通讯录 / 日历 / 相册 / 短信 / 通话记录</li>
+  <li>不收集任何系统传感器数据</li>
+  <li>不收集任何埋点 / 行为 / 性能数据</li>
+</ul>
+<h2>二、我们如何处理你本地的训练记录</h2>
+<p>你的番茄钟设置、每日专注分钟与完成番茄数、终身累计统计，仅保存在你本机的 Preferences 存储中，仅本应用可访问。</p>
+<ul>
+  <li>不上传到任何服务器</li>
+  <li>不发送到任何第三方 SDK</li>
+  <li>不写入系统共享区</li>
+</ul>
+<p>你随时可以在"我"页面点"清空所有记录"抹除所有历史。卸载应用也会自动清空。</p>
+<h2>三、我们如何处理网络</h2>
+<p><strong>本应用全程不联网。</strong> 没有初始化网络请求、没有后台拉取、没有埋点上传、没有 OTA 更新通道。应用启动后未请求任何系统网络权限。</p>
+<h2>四、我们不发通知</h2>
+<p>本应用不请求通知权限 / 不请求振动权限。番茄钟阶段结束的提示只在你打开应用时的屏幕上以动画形式呈现：</p>
+<ul>
+  <li>不响铃、不震动、不弹系统通知</li>
+  <li>若你需要番茄钟声音提示，请使用你的手机本机的其他闹钟应用</li>
+</ul>
+<h2>五、我们如何在后台计时</h2>
+<p>本应用<strong>不保活后台进程</strong>。你把应用切到后台时，计时器不作为后台服务存在；重新打开应用时，本应用会按"当前墙钟时间 - 阶段开始时间"推算当前应处的阶段（专注 / 休息）并刷新显示。</p>
+<p>这意味着你退出应用期间不会消耗电量，也不会读取或上传任何数据。</p>
+<h2>六、第三方 SDK 清单</h2>
+<p><strong>空。</strong> 本应用不集成任何第三方 SDK（含统计 / 推送 / 广告 / 支付 / 分享 / 社交登录等类别）。</p>
+<h2>七、未成年人</h2>
+<p>本应用是通用效率小工具，不含任何面向未成年或面向成年的特定内容，无年龄要求。</p>
+<h2>八、变更</h2>
+<p>若未来版本改变数据处理方式，会在应用更新说明中告知，并同步更新本协议版本号与生效日期。</p>
+<h2>九、联系我们</h2>
+<p>对本协议有任何疑问，请发邮件至 <strong>119123059@qq.com</strong>。</p>
+
+<footer>
+  © 2026 一小刻开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
