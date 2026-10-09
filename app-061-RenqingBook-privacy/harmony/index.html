@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="人情簿 的隐私政策">
+<title>人情簿 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>人情簿 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：人情簿开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>人情簿 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<p>人情簿（下称"本应用"）是一款完全本地运行的婚丧嫁娶份子钱台账工具。我们非常重视您的隐私，本政策说明我们<strong>不</strong>收集什么，以及您在本应用内的少量数据如何被保管。</p>
+<h2>1. 我们收集什么</h2>
+<p><strong>我们不收集任何可识别到您个人的信息</strong>。本应用不请求您的姓名、手机号、邮箱、位置、通讯录、设备 ID、广告 ID、IMEI、IDFA 或任何同类标识符。</p>
+<p>您在本应用内产生的全部数据——每一笔送出 / 收到的往来记录（人名、场合、金额、日期、备注）、按人聚合的汇总、未来场合提醒、外观设置（浅色 / 深色 / 跟随系统）——均由您在本机手动输入，<strong>不离开您的手机</strong>。</p>
+<p>本应用中的"人名"由您自己填写（可用真名、昵称、代号或任意您方便识别的字符），应用本身不会去校验或关联任何通讯录 / 身份库 / 外部数据。</p>
+<h2>2. 数据存储</h2>
+<p>您的所有数据 100% 存储在您本机的应用沙箱中（鸿蒙 preferences 与应用私有 files 目录），<strong>不联网、不上传、不同步到任何云端</strong>。</p>
+<p>本应用的数据总量极小，典型情况下不超过数十 KB，包含以下几组：</p>
+<ul>
+  <li><strong>往来记录</strong>：每一笔送出 / 收到的字段组合（人名、场合类型、金额、日期、备注）</li>
+  <li><strong>按人聚合</strong>：由往来记录派生的汇总视图数据</li>
+  <li><strong>未来场合</strong>：您主动添加的未来事件提醒（标题、日期、建议金额范围）</li>
+  <li><strong>外观设置</strong>：浅色 / 深色 / 跟随系统 三选一</li>
+</ul>
+<p>卸载本应用将同时清空全部数据，无任何残留。您也可以在"我 → 使用说明"底部点"清空所有数据"，一次性清空本机所有本地记录。</p>
+<h2>3. 第三方 SDK</h2>
+<p><strong>本应用不集成任何第三方 SDK</strong>。不含统计、分析、广告、推送、崩溃上报、A/B 测试、热更新、人脸识别、支付、金融 / 支付接口对接等任何第三方组件。</p>
+<h2>4. 权限说明</h2>
+<p><strong>本应用不申请任何敏感权限</strong>。不请求定位、相机、麦克风、通讯录、日历、通知、读写外部存储、生物识别等。</p>
+<p>您在"我 → 导出我的往来记录"中调起系统文件选择器把数据导出到外部位置时,是您本人的一次性选择，本应用不会在该操作外读写外部存储。</p>
+<p><strong>"下次回礼建议范围"说明</strong>：本应用对"按人聚合"视图下的"下次送礼建议范围"所做的任何数值提示，<strong>仅基于您自己过往手动输入的历史金额</strong>（均值 / 极值 ± 浮动）作为参考性估算，<strong>不构成任何理财、金融、支付、投资或习俗建议</strong>。本应用是本地台账工具，不提供金融服务。实际往来金额请根据您自身意愿与具体关系决定。</p>
+<h2>5. 您的权利</h2>
+<p>因为我们不存储您的任何数据到云端，所以不涉及"向他人索要数据"的流程。您可以：</p>
+<ul>
+  <li><strong>导出</strong>：在"我 → 导出我的往来记录"中把全部往来记录、按人聚合视图、未来场合清单和外观设置导出为 JSON 或纯文本文件；您可随时自行查阅、复制、迁移这些文件。</li>
+  <li><strong>删除</strong>：在"我 → 使用说明"底部点"清空所有数据"一次性清空本机所有本地记录；或直接卸载本应用。</li>
+  <li><strong>停用</strong>：直接停用或卸载本应用，不会留下任何残余。</li>
+</ul>
+<p>本应用不涉及个人数据跨境传输、不涉及未成年人个人信息的收集。</p>
+<h2>6. 联系我们</h2>
+<p>如果您对本政策有任何疑问、建议或投诉，欢迎联系：</p>
+<ul>
+  <li><strong>开发者</strong>：人情簿开发团队</li>
+  <li><strong>邮箱</strong>：119123059@qq.com</li>
+</ul>
+<p>本政策的最新版本可能随功能升级调整，但凡"开始联网"或"开始集成第三方 SDK"等重大变更，均会在应用内明确提示并提供同意 / 拒绝入口。</p>
+
+<footer>
+  © 2026 人情簿开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
