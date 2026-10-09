@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="饮水环 的隐私政策">
+<title>饮水环 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>饮水环 隐私政策</strong></div>
+  <div class="row">版本 1.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：饮水环开发团队</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>饮水环 隐私政策</h1>
+<p><strong>生效日期</strong>：2026-10-09</p>
+<h2>1. 我们收集什么</h2>
+<p>我们不收集任何可识别到您个人的信息。您对本应用的所有使用行为——点击按钮打点、修改日目标、翻看历史、翻看周曲线、切换外观、导出 CSV——都在您本机设备内完成，不会被记录、不会被上传。</p>
+<p>本应用是<strong>饮水记录工具</strong>，所使用的饮水量 / 日目标 / 时间戳均为您自行输入或由本应用在您点击按钮时记录的本地数据，不包含任何医疗诊断或饮水摄入推荐。本应用的所有数据和功能仅为您个人作记录和回顾用途，<strong>不构成任何医疗建议</strong>——请根据您的实际身体状况和医生建议合理饮水。</p>
+<h2>2. 数据存储</h2>
+<p>您在本应用中产生的所有内容——饮水打点记录、日目标、本地偏好（外观模式）——都仅存储在您本机设备的应用沙盒目录中（通过 shared-kit 的 PrefsStore），不会上传到任何服务器，不与任何第三方共享。</p>
+<p>卸载本应用将一并清除所有本地饮水记录与偏好数据。</p>
+<p>当您在设置页主动点击"导出 CSV"、或在历史页 / 单日明细页主动点击"导出 CSV"时，本应用会在您的设备下载目录生成 CSV 文件（<code>waterring-entries-YYYYMMDD.csv</code> / <code>waterring-entries-YYYYMM.csv</code> / <code>waterring-entries-all.csv</code>）。这些文件由您自行持有和使用，本应用不会主动读取、上传或分享它们。</p>
+<h2>3. 第三方 SDK</h2>
+<p>本应用不集成任何第三方 SDK（无广告 SDK、无统计分析 SDK、无崩溃上报 SDK、无社交分享 SDK、无推送 SDK、无账号登录 SDK、无地图 SDK、无健康 SDK）。</p>
+<h2>4. 权限说明</h2>
+<p>本应用不申请任何敏感权限。</p>
+<p>本应用<strong>不申请</strong>：</p>
+<ul>
+  <li>不申请网络权限（无联网能力，不发任何 HTTP / WebSocket 请求）</li>
+  <li>不申请位置权限</li>
+  <li>不申请相机 / 麦克风权限</li>
+  <li>不申请存储读写权限（CSV 写入下载目录由系统文件 API 完成，不触敏感存储权限）</li>
+  <li>不申请日历读写权限</li>
+  <li>不申请通知权限（无饮水到点提醒、无"你今天少喝了"提醒；您主动打开 app 记录）</li>
+  <li>不申请传感器权限</li>
+  <li>不申请健康数据权限（不读取 / 不写入系统 Health 数据）</li>
+  <li>不申请后台常驻权限</li>
+</ul>
+<h2>5. 您的权利</h2>
+<ul>
+  <li><strong>查看</strong>：您对本应用的使用无需任何账号，您的所有饮水记录与偏好设置均在 app 内可见</li>
+  <li><strong>修改</strong>：饮水打点可长按单条删除；日目标可随时调整；外观可随时切换</li>
+  <li><strong>导出</strong>：历史页 / 单日明细页 / 设置页均可导出 CSV 到系统下载目录（UTF-8）</li>
+  <li><strong>彻底清除</strong>：卸载本应用将删除全部本地数据，无服务器备份</li>
+</ul>
+<h2>6. 联系我们</h2>
+<p>如有任何隐私相关问题，请发送邮件至：119123059@qq.com</p>
+
+<footer>
+  © 2026 饮水环开发团队 ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
