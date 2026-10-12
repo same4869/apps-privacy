@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="浇花打卡本 的隐私政策">
+<title>浇花打卡本 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>浇花打卡本 隐私政策</strong></div>
+  <div class="row">版本 1.0.0 ・ 生效日期 2026-10-12</div>
+  <div class="row">开发者：ccflower713</div>
+  <div class="row">联系邮箱：<a href="mailto:ccflower713@163.com">ccflower713@163.com</a></div>
+</header>
+
+<h1>浇花打卡本 隐私政策</h1>
+<p><strong>版本</strong>：1.0.0 <strong>生效日期</strong>：2026-10-12 <strong>开发者</strong>：ccflower713 <strong>联系邮箱</strong>：ccflower713@163.com</p>
+<h2>一、我们是谁</h2>
+<p>浇花打卡本（以下简称"本应用"）是一款<strong>完全离线的本地家庭植物浇水档案记录器</strong>。本应用由开发者 ccflower713 独立开发，没有运营团队、没有服务器、没有后台。</p>
+<h2>二、我们收集什么</h2>
+<p><strong>什么都不收集。</strong> 本应用在你手机上记录的所有信息（植物名、位置标签、浇水间隔天数、每一次浇水的时间戳），<strong>完完全全只在你手机本地保存</strong>。</p>
+<ul>
+  <li>不采集设备 ID / IMEI / MAC / 广告 ID</li>
+  <li>不采集地理位置 / 定位信息</li>
+  <li>不采集通讯录 / 短信 / 相册 / 相机</li>
+  <li>不采集浏览历史 / 使用时长 / 功能使用频次</li>
+  <li>不采集任何形式的用户画像信息</li>
+  <li>不接入任何第三方 SDK（无广告 SDK、无统计 SDK、无 Push SDK）</li>
+</ul>
+<h2>三、数据存储位置</h2>
+<p>你在本应用里添加的所有盆档和浇水动作记录，都通过系统 <code>preferences</code> 接口写在<strong>你手机的本应用沙箱内</strong>（路径：应用私有空间 <code>el2/base/preferences/</code>）。</p>
+<ul>
+  <li>任何其他应用都读不到</li>
+  <li>不同步到云、不同步到任何服务器、不同步到你的其他设备</li>
+  <li>卸载本应用 = 所有数据自动清空</li>
+  <li>应用内"关于 → 清空所有数据"按钮 = 立即清空所有盆档和历史</li>
+</ul>
+<h2>四、网络连接</h2>
+<p><strong>本应用全程零联网。</strong> 已在 Harmony <code>module.json5</code> 的 <code>requestPermissions</code> 中声明无 <code>ohos.permission.INTERNET</code> 等任何联网权限。如果你的手机联网状态下打开本应用，它也绝不会往外发出任何请求。</p>
+<h2>五、植物名和位置标签说明</h2>
+<p>本应用的"植物名"（例如你输入的"绿萝"）和"位置"（例如"客厅窗台"）字段，是你为了方便自己辨认而给每盆植物贴的<strong>本地标签</strong>。这些文字：</p>
+<ul>
+  <li>不发布到任何平台</li>
+  <li>不展示给除你以外的任何人</li>
+  <li>不同步到任何服务器</li>
+  <li>本应用不是植物养护社交平台、不是 UGC 内容平台</li>
+  <li>8 个预设植物名（绿萝 / 多肉 / 吊兰 / 虎皮兰 / 发财树 / 龟背竹 / 芦荟 / 君子兰）仅用于首次使用时帮助你快速开始，可随意覆盖</li>
+</ul>
+<h2>六、权限清单</h2>
+<p>本应用申请的系统权限：<strong>无</strong>。</p>
+<h2>七、未成年人保护</h2>
+<p>本应用不收集任何个人信息，故对未成年人不构成任何隐私风险。本应用适合全年龄段使用（审核分级建议 4+）。</p>
+<h2>八、政策变更</h2>
+<p>若本政策发生变更，新版本会在"关于"页展示新的生效日期。继续使用即视为接受新政策。</p>
+<h2>九、联系我们</h2>
+<p>对本政策有任何疑问，请发邮件至：<strong>ccflower713@163.com</strong></p>
+<p>本政策简体中文版本为唯一正式版本。</p>
+
+<footer>
+  © 2026 ccflower713 ・ <a href="mailto:ccflower713@163.com">ccflower713@163.com</a>
+</footer>
+</main>
+</body>
+</html>
