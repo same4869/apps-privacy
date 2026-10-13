@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="常见和弦表 的隐私政策">
+<title>常见和弦表 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>常见和弦表 隐私政策</strong></div>
+  <div class="row">版本 1.0.0 ・ 生效日期 2026-10-13</div>
+  <div class="row">开发者：ccflower713</div>
+  <div class="row">联系邮箱：<a href="mailto:ccflower713@163.com">ccflower713@163.com</a></div>
+</header>
+
+<h1>常见和弦表 隐私政策</h1>
+<p><strong>版本</strong>：1.0.0 <strong>生效日期</strong>：2026-10-13 <strong>开发者</strong>：ccflower713 <strong>联系邮箱</strong>：ccflower713@163.com</p>
+<h2>一、我们是谁</h2>
+<p>常见和弦表（以下简称"本应用"）是一款<strong>完全离线的本地吉他和弦速查手册</strong>。本应用由开发者 ccflower713 独立开发，没有运营团队、没有服务器、没有后台。</p>
+<h2>二、我们收集什么</h2>
+<p><strong>什么都不收集。</strong> 本应用是<strong>纯静态知识速查</strong>：里面的 20 个常见和弦定义是编译期常量（公开乐理知识），没有用户记录字段、没有打卡功能、没有登录、没有搜索历史、没有收藏。</p>
+<ul>
+  <li>不采集设备 ID / IMEI / MAC / 广告 ID</li>
+  <li>不采集地理位置 / 定位信息</li>
+  <li>不采集通讯录 / 短信 / 相册 / 相机 / 麦克风</li>
+  <li>不采集浏览历史 / 使用时长 / 功能使用频次</li>
+  <li>不采集任何形式的用户画像信息</li>
+  <li>不接入任何第三方 SDK（无广告 SDK、无统计 SDK、无 Push SDK）</li>
+</ul>
+<h2>三、数据存储位置</h2>
+<p>本应用在你手机上只写入<strong>两个本地偏好字段</strong>：</p>
+<ul>
+  <li><code>privacy_agreed_v1</code>：你是否已同意本隐私协议（布尔值）</li>
+  <li><code>appearance_mode_v1</code>：你选的外观模式（整数：0 跟随系统 / 1 浅色 / 2 深色）</li>
+</ul>
+<p>通过系统 <code>preferences</code> 接口写在<strong>你手机的本应用沙箱内</strong>（路径：应用私有空间 <code>el2/base/preferences/</code>）。</p>
+<ul>
+  <li>任何其他应用都读不到</li>
+  <li>不同步到云、不同步到任何服务器、不同步到你的其他设备</li>
+  <li>卸载本应用 = 所有偏好自动清空</li>
+</ul>
+<h2>四、我们不做什么</h2>
+<ul>
+  <li><strong>不联网</strong>：本应用不发起任何网络请求，不下载任何资源，不请求任何接口。</li>
+  <li><strong>不传感器</strong>：本应用不读取麦克风、加速度计、陀螺仪等传感器。</li>
+  <li><strong>不通知</strong>：本应用不发送任何本地通知，不响铃不震动。</li>
+  <li><strong>不账号</strong>：本应用没有账号系统，无需注册、无需登录。</li>
+  <li><strong>不社交</strong>：没有分享、没有排行、没有收藏、没有评论。</li>
+  <li><strong>不广告</strong>：没有任何广告投放。</li>
+  <li><strong>不统计</strong>：没有任何用户行为统计。</li>
+  <li><strong>不电商</strong>：本应用不是商城，不接入任何支付、链接、团购。</li>
+  <li><strong>不曲库</strong>：本应用不包含任何歌曲、乐谱、音频文件。</li>
+</ul>
+<h2>五、权限说明</h2>
+<p>本应用在 <code>module.json5</code> 中声明的权限为空。你装完就能用，不会弹任何权限弹窗。</p>
+<h2>六、你的权利</h2>
+<p>你随时可以：</p>
+<ul>
+  <li><strong>卸载本应用</strong> —— 所有本地偏好立即清空</li>
+  <li><strong>在应用内切换外观模式</strong> —— 浅/深/跟随系统三选一</li>
+  <li><strong>拒绝隐私协议</strong> —— 本应用立即退出，不占用任何资源</li>
+</ul>
+<h2>七、联系我们</h2>
+<p>如你对本隐私政策有任何疑问，可通过邮箱联系：<strong>ccflower713@163.com</strong></p>
+<p>开发者：ccflower713</p>
+<h2>八、更新说明</h2>
+<p>本隐私政策内容若有重大变更（如增加数据收集项），本应用会在下一次版本更新时重新弹出同意框，让你再确认一次。本次版本（1.0.0）为首次上架，不涉及变更。</p>
+
+<footer>
+  © 2026 ccflower713 ・ <a href="mailto:ccflower713@163.com">ccflower713@163.com</a>
+</footer>
+</main>
+</body>
+</html>
