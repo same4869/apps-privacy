@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="睡记 的隐私政策">
+<title>睡记 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>睡记 隐私政策</strong></div>
+  <div class="row">版本 1.0.0 ・ 生效日期 2026-10-09</div>
+  <div class="row">开发者：SameX</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>睡记 隐私政策</h1>
+<p>更新日期：2026-10-09 版本：1.0.0 适用应用：睡记（Bundle: com.xun.sleepnote） 开发者：SameX 联系邮箱：119123059@qq.com</p>
+<p>---</p>
+<p>本政策说明「睡记」如何处理你在使用本应用时产生的信息。我们的核心承诺很简单：<strong>本应用零传感器 / 零音频 / 零位置 / 零账户 / 零联网 / 零推送 / 零医疗结论；不收集、不上传、不共享任何用户数据，也不接入任何第三方 SDK</strong>。</p>
+<p>---</p>
+<h2>一、我们处理的信息</h2>
+<p>本应用处理的全部信息都保存在你的本机 Preferences 中，仅供本应用自身读取：</p>
+<ul>
+  <li>入睡时间戳（你本人按"点睡"大圆钮的那一刻）</li>
+  <li>醒来时间戳（你本人按"点醒"大圆钮的那一刻）</li>
+  <li>一夜的 1-5 星主观自评（你本人滑星选的那一下）</li>
+  <li>一周起始日的本地偏好（周一 / 周日）</li>
+  <li>隐私政策的首启同意状态</li>
+</ul>
+<p>以上信息均由你本人在本应用内手动按钮录入，离开本机不存在任何副本。本应用<strong>不</strong>基于加速度、麦克风、心跳、位置或任何其它传感器推断你的睡眠；全部数据都是你自己手动按下按钮产生的。</p>
+<h2>二、我们不做的事（硬承诺）</h2>
+<p>本应用：</p>
+<ul>
+  <li><strong>零传感器</strong>：不读加速度、不读陀螺仪、不读任何体感数据</li>
+  <li><strong>零音频</strong>：不启用麦克风、不听呼噪、不录音</li>
+  <li><strong>零位置</strong>：不采集 GPS、不采集 WIFI / 基站定位</li>
+  <li><strong>零账户</strong>：不接入任何云端账号 / 第三方登录体系（不支持微信、华为、Apple 登录）</li>
+  <li><strong>零联网</strong>：不上传任何用户数据到服务器 —— 本应用无服务器组件</li>
+  <li><strong>零推送</strong>：不建立任何提示通道、不建系统闹钟、不震动</li>
+  <li><strong>零医疗结论</strong>：不显示任何"失眠 / 睡眠障碍 / 诊断 / 治疗 / 调理"字眼；星级为你本人主观自评、非医学评级、非算法推理；不给出任何作息指导</li>
+  <li><strong>不请求任何敏感系统权限</strong>：</li>
+  <li>不请求相机权限</li>
+  <li>不请求定位权限</li>
+  <li>不请求麦克风权限</li>
+  <li>不请求通讯录权限</li>
+  <li>不请求通知权限</li>
+  <li>不请求运动数据权限</li>
+  <li><strong>不接入</strong>任何第三方 SDK（无广告 SDK、无统计 SDK、无崩溃 SDK、无推送 SDK）</li>
+  <li><strong>不展示</strong>任何形式的广告</li>
+  <li><strong>不加</strong>任何连续天数 / 坚持徽章 / 对他人比较 / 排行等打卡焦虑叙事</li>
+</ul>
+<h2>三、数据存储与安全</h2>
+<ul>
+  <li>存储位置：鸿蒙系统 Preferences，位于本应用在系统分配的私有沙箱目录内</li>
+  <li>存储格式：明文 JSON（你手动按钮产生的时间戳与星级不属于敏感个人信息，无加密必要）</li>
+  <li>访问范围：仅本应用自身，其它应用无法访问</li>
+  <li>卸载清理：卸载本应用时，系统会同步清除本应用的全部沙箱数据</li>
+</ul>
+<h2>四、数据导出与删除</h2>
+<ul>
+  <li>本应用 v1.0.0 不提供数据导出 / CSV 功能（规划在 v1.1 加入）</li>
+  <li>如需清除全部数据，请在系统设置中卸载本应用；或在本应用内逐条删除一夜记录</li>
+  <li>本应用无服务器端数据，无需额外的"远端删除"流程</li>
+</ul>
+<h2>五、未成年人保护</h2>
+<p>本应用不收集任何个人信息，因此也不单独针对未成年人进行信息收集。本应用面向所有用户开放使用。本应用不加打卡焦虑叙事、不加对他人比较、不加任何引导性作息指导，不构成对未成年人身心的额外压力。</p>
+<h2>六、政策变更</h2>
+<p>若本政策发生变更，新版本会随应用更新一起下发，更新日期会体现在本页顶部。重大变更会在首启再次弹出同意框。</p>
+<h2>七、联系我们</h2>
+<p>对本政策有任何疑问，请发邮件至：<strong>119123059@qq.com</strong></p>
+<p>---</p>
+<p>本政策采用《中华人民共和国个人信息保护法》作为合规基线。</p>
+
+<footer>
+  © 2026 SameX ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
