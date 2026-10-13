@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="中国省份本 的隐私政策">
+<title>中国省份本 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>中国省份本 隐私政策</strong></div>
+  <div class="row">版本 1.0.0 ・ 生效日期 2026-10-13</div>
+  <div class="row">开发者：ccflower713</div>
+  <div class="row">联系邮箱：<a href="mailto:ccflower713@163.com">ccflower713@163.com</a></div>
+</header>
+
+<h1>中国省份本 隐私政策</h1>
+<p><strong>版本</strong>：1.0.0 <strong>生效日期</strong>：2026-10-13 <strong>开发者</strong>：ccflower713 <strong>联系邮箱</strong>：ccflower713@163.com</p>
+<h2>一、我们是谁</h2>
+<p>中国省份本（以下简称"本应用"）是一款<strong>完全离线的三十四省级行政区速查工具</strong>。本应用由开发者 ccflower713 独立开发，没有运营团队、没有服务器、没有后台、没有大模型 API 接入。</p>
+<h2>二、我们收集什么</h2>
+<p><strong>什么都不收集。</strong> 本应用展示的三十四条省份数据（省名 / 简称 / 车牌字母 / 省会 / 面积 / 人口 / 一行地理特色）均为应用代码里的编译期常量，不是在线下载的。你在本应用里的所有操作（切换筛选 / 打开详情 / 切外观）<strong>完完全全只在你手机本地处理</strong>，不发往任何服务器。</p>
+<ul>
+  <li>不采集设备 ID / IMEI / MAC / 广告 ID</li>
+  <li>不采集地理位置 / 定位信息</li>
+  <li>不采集通讯录 / 短信 / 相册 / 相机 / 麦克风 / 加速度传感器</li>
+  <li>不采集浏览历史 / 使用时长 / 功能使用频次</li>
+  <li>不采集任何形式的用户画像信息</li>
+  <li>不接入任何第三方 SDK（无广告 SDK、无统计 SDK、无 Push SDK、无 AI/LLM SDK）</li>
+  <li>三十四条省份数据和特色描述均为<strong>出厂固定本地字符串常量</strong>，不随版本动态下发、不走任何在线接口</li>
+</ul>
+<h2>三、数据存储位置</h2>
+<p>本应用仅在本地保存一个"外观模式"偏好（跟随系统 / 浅色 / 深色），通过系统 <code>preferences</code> 接口写在<strong>你手机的本应用沙箱内</strong>（路径：应用私有空间 <code>el2/base/preferences/</code>）。</p>
+<ul>
+  <li>任何其他应用都读不到</li>
+  <li>不同步到云、不同步到任何服务器、不同步到你的其他设备</li>
+  <li>卸载本应用 = 该偏好自动清空</li>
+</ul>
+<h2>四、权限</h2>
+<p>本应用<strong>不申请任何系统权限</strong>：无网络权限 / 无相机 / 无麦克风 / 无定位 / 无存储 / 无通讯录 / 无通知。</p>
+<h2>五、你的权利</h2>
+<ul>
+  <li><strong>自由停止使用</strong>：卸载本应用即可，所有本地偏好随卸载清空。</li>
+  <li><strong>投诉与反馈</strong>：可发邮件至 ccflower713@163.com 反馈建议；若涉及隐私问题，开发者会在十五个工作日内回复。</li>
+</ul>
+<h2>六、未成年人</h2>
+<p>本应用不特别面向未成年人收集任何信息（我们本来就什么都不收集）。</p>
+<h2>七、政策变更</h2>
+<p>隐私政策若有变更，会在本应用的新版本内更新；重要变更会通过首启重新弹隐私协议方式告知用户。</p>
+<h2>八、关于内容</h2>
+<ul>
+  <li>省份数据和一行地理特色描述力求客观中性，仅引用自然资源部公开资料和第七次全国人口普查公报（2020）</li>
+  <li>如发现数据与官方公开资料存在不一致，欢迎发邮件至 ccflower713@163.com 反馈，开发者会在下一版本修订</li>
+  <li>本应用不表达任何政治、宗教、民族、地域评价立场</li>
+</ul>
+<p><strong>联系邮箱</strong>：ccflower713@163.com <strong>最后更新</strong>：2026-10-13</p>
+
+<footer>
+  © 2026 ccflower713 ・ <a href="mailto:ccflower713@163.com">ccflower713@163.com</a>
+</footer>
+</main>
+</body>
+</html>
