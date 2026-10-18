@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="周报四格本 的隐私政策">
+<title>周报四格本 隐私政策</title>
+<style>
+:root {
+  --fg: #2B241F;
+  --muted: #6B6056;
+  --bg: #FBFAF7;
+  --accent: #6B5B45;
+  --rule: #E4DDD2;
+  --code-bg: #F0ECE4;
+  --max-w: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDE6DC;
+    --muted: #A69B8E;
+    --bg: #1A1612;
+    --accent: #D3B892;
+    --rule: #2E2822;
+    --code-bg: #26211C;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.75;
+  font-size: 16px;
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+h2 { font-size: 20px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p  { margin: 0 0 14px; }
+ul, ol { margin: 0 0 14px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  color: var(--fg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+header.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+header.meta .row { margin: 2px 0; }
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header class="meta">
+  <div class="row"><strong>周报四格本 隐私政策</strong></div>
+  <div class="row">版本 1.0.0 ・ 生效日期 2026-10-19</div>
+  <div class="row">开发者：SameX</div>
+  <div class="row">联系邮箱：<a href="mailto:119123059@qq.com">119123059@qq.com</a></div>
+</header>
+
+<h1>周报四格本 隐私政策</h1>
+<p><strong>更新日期</strong>：2026-10-19 · <strong>版本</strong>：v1.0.0</p>
+<p>本文档描述 <strong>周报四格本</strong> 应用（下称"本应用"）如何处理您的信息。本应用由 SameX 开发并发布。</p>
+<h2>1. 我们不收集任何个人信息</h2>
+<p>本应用是<strong>完全离线</strong>的工具，不接入任何服务器、不请求任何系统权限、不集成任何第三方 SDK。您在本应用内输入的全部内容——包括周报四段卡片内容、ISO 周号、更新时间——都仅保存在您本机设备的应用沙箱内，不会以任何方式离开您的设备。</p>
+<p><strong>我们不收集、不使用、不传输、不存储</strong>：</p>
+<ul>
+  <li>您的任何个人身份信息（姓名、身份证号、手机号、邮箱等）</li>
+  <li>您的位置信息</li>
+  <li>您的通讯录、通话记录、短信</li>
+  <li>您的相册、相机、麦克风、录音</li>
+  <li>您的设备标识（IMEI、Android ID、OAID 等）</li>
+  <li>您的输入内容（周报文字内容）</li>
+  <li>您的使用行为、点击轨迹、崩溃日志</li>
+</ul>
+<h2>2. 我们不请求任何系统权限</h2>
+<p>本应用的 <code>module.json5</code> 清单文件中 <code>requestPermissions</code> 字段<strong>完全为空</strong>。安装后不会向您请求任何系统权限。</p>
+<h2>3. 您的数据在哪里</h2>
+<p>全部数据保存在本机设备的应用私有目录（HarmonyOS Next 的应用沙箱 <code>/data/el2/base/com.xun.quadweek/</code>）。该目录只有本应用自己能访问，其它应用、广告 SDK、第三方工具均无法读取。</p>
+<p><strong>卸载本应用时，该目录被操作系统自动清除</strong>，您的全部周报内容随之删除，无法恢复。</p>
+<h2>4. 剪贴板</h2>
+<p>本应用的"导出 Markdown" 功能会将您当前的周报内容写入系统剪贴板，便于您粘贴到钉钉、飞书、Lark 等办公工具发送给同事。这个操作：</p>
+<ul>
+  <li><strong>仅在您主动点击"导出 MD"按钮时发生</strong></li>
+  <li>内容由您已填写的四段卡片拼接而成，不包含任何额外信息</li>
+  <li>不会被本应用上传到任何服务器</li>
+</ul>
+<h2>5. 第三方 SDK 和分析</h2>
+<p>本应用<strong>不含</strong>任何第三方 SDK：没有广告 SDK、没有统计 SDK、没有推送 SDK、没有登录 SDK。您看到的所有界面均为本应用内置的本地代码。</p>
+<h2>6. 未成年人保护</h2>
+<p>本应用不包含针对未成年人的收集行为（因为本应用对任何用户都不收集任何信息）。本应用的内容是中性的职场工具性质，无游戏化激励，无弹窗推送。</p>
+<h2>7. 政策变更</h2>
+<p>本政策更新时，更新日期会被修改。重大变更会通过应用内弹窗告知您。</p>
+<h2>8. 联系方式</h2>
+<ul>
+  <li>开发者：SameX</li>
+  <li>邮箱：119123059@qq.com</li>
+</ul>
+<p>如您对本政策或本应用有任何疑问，请通过以上邮箱联系。</p>
+<p>---</p>
+<p><strong>本应用仅为个人周报结构化记录工具；不代写、不替代工作内容；所有数据保留在本机。</strong></p>
+
+<footer>
+  © 2026 SameX ・ <a href="mailto:119123059@qq.com">119123059@qq.com</a>
+</footer>
+</main>
+</body>
+</html>
